@@ -18,7 +18,7 @@ Connects to Prism Central
 Disconnect from one or all of prism central hosts
 
 ### [Get-Cluster](Get-Cluster.md)
-Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under connected prism centrals are displaye
+Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under connected prism centrals are displayed.
 
 ### [Get-Image](Get-Image.md)
 Displays the image info of specified uuid or all Images.
@@ -36,16 +36,13 @@ Displays storage containers.
 Displays tasks.
 
 ### [Get-VM](Get-VM.md)
-Displays a list of VM
+Displays a list of VM.
 
 ### [New-Image](New-Image.md)
-Creates a new image
+Creates a new image.
 
 ### [New-NutanixObject](New-NutanixObject.md)
 Creates a Nutanix Object.
-
-### [Set-VM](Set-VM.md)
-Updates VM
 
 ### [Remove-Image](Remove-Image.md)
 Removes an image.
@@ -57,14 +54,14 @@ Removes a VM
 Updates the image.
 
 ### [Set-VM](Set-VM.md)
-Updates VM
+Updates VM.
 
 ### [Start-VM](Start-VM.md)
-Power on the VM
+Power on the VM.
 
 ### [Stop-VM](Stop-VM.md)
-Power off the VM
+Power off the VM.
 
 ### [Wait-Task](Wait-Task.md)
-Waits until all tasks are finished or timeout
+Waits until all tasks are finished or timeout.
 

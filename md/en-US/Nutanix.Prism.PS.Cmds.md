@@ -8,54 +8,54 @@ Locale: en-US
 
 # Nutanix.Prism.Ps.Cmds Module
 ## Description
-{{ Fill in the Description }}
+This module contains commands for all nutanix services
 
 ## Nutanix.Prism.Ps.Cmds Cmdlets
 ### [Get-Cluster](Get-Cluster.md)
-{{ Fill in the Description }}
+Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under connected prism centrals are displayed.
 
 ### [Get-Image](Get-Image.md)
-{{ Fill in the Description }}
+Displays the image info of specified uuid or all Images.
 
 ### [Get-Metric](Get-Metric.md)
-{{ Fill in the Description }}
+Displays a metric of the cluster for given time period.
 
 ### [Get-Network](Get-Network.md)
-{{ Fill in the Description }}
+Displays all networks available from the connected Prism Central.
 
 ### [Get-StorageContainer](Get-StorageContainer.md)
-{{ Fill in the Description }}
+Displays storage containers.
 
 ### [Get-Task](Get-Task.md)
-{{ Fill in the Description }}
+Displays tasks.
 
 ### [Get-VM](Get-VM.md)
-{{ Fill in the Description }}
+Displays a list of VM.
 
 ### [New-Image](New-Image.md)
-{{ Fill in the Description }}
+Creates a new image.
 
 ### [New-VM](New-VM.md)
-{{ Fill in the Description }}
+Creates a new VM
 
 ### [Remove-Image](Remove-Image.md)
-{{ Fill in the Description }}
+Removes an image.
 
 ### [Remove-VM](Remove-VM.md)
-{{ Fill in the Description }}
+Removes a VM.
 
 ### [Set-Image](Set-Image.md)
-{{ Fill in the Description }}
+Updates an Image.
 
 ### [Set-VM](Set-VM.md)
-{{ Fill in the Description }}
+Updates a VM.
 
 ### [Start-VM](Start-VM.md)
-{{ Fill in the Description }}
+Power on the VM.
 
 ### [Stop-VM](Stop-VM.md)
-{{ Fill in the Description }}
+Power off the VM.
 
 ### [Wait-Task](Wait-Task.md)
-{{ Fill in the Description }}
+Waits until all tasks are finished or timeout.
 
