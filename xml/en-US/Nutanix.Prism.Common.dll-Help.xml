@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Connect-PrismCentral</command:name>
+      <command:verb>Connect</command:verb>
+      <command:noun>PrismCentral</command:noun>
+      <maml:description>
+        <maml:para>Connects to Prism Central</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with different IP or Hostname. To disconnect a Prism Central, use Disconnect-PrismCentral with -Server. To disconnect all, use * for -Server value. The session is valid for 15 minutes from last access to the Prism Central.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Connect-PrismCentral</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="S">
+          <maml:name>Server</maml:name>
+          <maml:description>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="A">
+          <maml:name>AcceptInvalidSSLCerts</maml:name>
+          <maml:description>
+            <maml:para>Whether to accept invalid SSL certificates. When you have a certificate that is not issued by the certificate authority and you trust the certificate, then use this option</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="C">
+          <maml:name>Credential</maml:name>
+          <maml:description>
+            <maml:para>Credential in PSCredential type. To create a credential, run `$Cred = New-Object System.Management.Automation.PSCredential(&lt;username&gt;, $Secure)` where &lt;username&gt; is a string and $Secure is a SecureString type of a string. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in raw text string.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+          <dev:type>
+            <maml:name>PSCredential</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="F">
+          <maml:name>ForcedConnection</maml:name>
+          <maml:description>
+            <maml:para>If set then it forcefully connects by skipping the version mismatch check.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SessionTimeoutSeconds</maml:name>
+          <maml:description>
+            <maml:para>Session timeout in seconds. If there is no activity against Prism Central within this seconds, the session will be disconnected</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+          <dev:type>
+            <maml:name>UInt32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+      <command:syntaxItem>
+        <maml:name>Connect-PrismCentral</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="S">
+          <maml:name>Server</maml:name>
+          <maml:description>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="A">
+          <maml:name>AcceptInvalidSSLCerts</maml:name>
+          <maml:description>
+            <maml:para>Whether to accept invalid SSL certificates. When you have a certificate that is not issued by the certificate authority and you trust the certificate, then use this option</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="F">
+          <maml:name>ForcedConnection</maml:name>
+          <maml:description>
+            <maml:para>If set then it forcefully connects by skipping the version mismatch check.</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="P">
+          <maml:name>Password</maml:name>
+          <maml:description>
+            <maml:para>Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in raw text string, then use $Secure as the value of this parameter</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+          <dev:type>
+            <maml:name>SecureString</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>SessionTimeoutSeconds</maml:name>
+          <maml:description>
+            <maml:para>Session timeout in seconds. If there is no activity against Prism Central within this seconds, the session will be disconnected</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+          <dev:type>
+            <maml:name>UInt32</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="U">
+          <maml:name>UserName</maml:name>
+          <maml:description>
+            <maml:para>User Name for login.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="A">
+        <maml:name>AcceptInvalidSSLCerts</maml:name>
+        <maml:description>
+          <maml:para>Whether to accept invalid SSL certificates. When you have a certificate that is not issued by the certificate authority and you trust the certificate, then use this option</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="C">
+        <maml:name>Credential</maml:name>
+        <maml:description>
+          <maml:para>Credential in PSCredential type. To create a credential, run `$Cred = New-Object System.Management.Automation.PSCredential(&lt;username&gt;, $Secure)` where &lt;username&gt; is a string and $Secure is a SecureString type of a string. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in raw text string.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
+        <dev:type>
+          <maml:name>PSCredential</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="F">
+        <maml:name>ForcedConnection</maml:name>
+        <maml:description>
+          <maml:para>If set then it forcefully connects by skipping the version mismatch check.</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="P">
+        <maml:name>Password</maml:name>
+        <maml:description>
+          <maml:para>Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in raw text string, then use $Secure as the value of this parameter</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
+        <dev:type>
+          <maml:name>SecureString</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="0" aliases="S">
+        <maml:name>Server</maml:name>
+        <maml:description>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>SessionTimeoutSeconds</maml:name>
+        <maml:description>
+          <maml:para>Session timeout in seconds. If there is no activity against Prism Central within this seconds, the session will be disconnected</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
+        <dev:type>
+          <maml:name>UInt32</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="U">
+        <maml:name>UserName</maml:name>
+        <maml:description>
+          <maml:para>User Name for login.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.Security.SecureString</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.Management.Automation.SwitchParameter</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCert</dev:code>
+        <dev:remarks>
+          <maml:para>Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignore validation of certificate. The $Secure value can be created with ConvertTo-SecureString like following. Replace 'adminpassword' with your real admin password string</maml:para>
+          <maml:para>$Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -Credential $Cred -AcceptInvalidSSLCerts</dev:code>
+        <dev:remarks>
+          <maml:para>Connects to Prism Central IP 10.36.240.21 with credentials. $Cred can be created as following.</maml:para>
+          <maml:para>$Cred = New-Object System.Management.Automation.PSCredential("admin", $Secure) and the $Secure can be created as same way as Example 1.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 3 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -UserName admin -AcceptInvalidSSLCerts</dev:code>
+        <dev:remarks>
+          <maml:para>Connects to Prism Central IP 10.36.240.21 with user name `admin`. This will prompt for password, so user can type the password to console.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Disconnect-PrismCentral</command:name>
+      <command:verb>Disconnect</command:verb>
+      <command:noun>PrismCentral</command:noun>
+      <maml:description>
+        <maml:para>Disconnect from one or all of prism central hosts</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Disconnect from one or all of prism central hosts. use '*' as -Server parameter to disconnect all.</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Disconnect-PrismCentral</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="S">
+          <maml:name>Servers</maml:name>
+          <maml:description>
+            <maml:para>Name or IP address of Prism Central</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="S">
+        <maml:name>Servers</maml:name>
+        <maml:description>
+          <maml:para>Name or IP address of Prism Central</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Disconnect-PrismCentral -Servers 10.46.28.31</dev:code>
+        <dev:remarks>
+          <maml:para>Disconnects from Prism Central host 10.46.28.31</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------------------------- Example 2 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; Disconnect-PrismCentral -Servers *</dev:code>
+        <dev:remarks>
+          <maml:para>Disconnects from all Prism Central</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>New-NutanixObject</command:name>
+      <command:verb>New</command:verb>
+      <command:noun>NutanixObject</command:noun>
+      <maml:description>
+        <maml:para>Creates a Nutanix Object.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>Creates a Nutanix Object. This is used to create an object for parameters for other commands which requires certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>New-NutanixObject</maml:name>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+          <maml:name>Name</maml:name>
+          <maml:description>
+            <maml:para>Name of the object. Available object names are VMDiskAddress, BootConfig, VMDiskSpecCreate, VMDisk, VMNicSpec.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
+        <maml:name>Name</maml:name>
+        <maml:description>
+          <maml:para>Name of the object. Available object names are VMDiskAddress, BootConfig, VMDiskSpecCreate, VMDisk, VMNicSpec.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>None</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>System.Object</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>-------------------------- Example 1 --------------------------</maml:title>
+        <dev:code>PS C:\&gt; $boot = New-NutanixObject BootConfig</dev:code>
+        <dev:remarks>
+          <maml:para>Creates a BootConfig type of object to be used for creating a VM</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks />
+  </command:command>
+</helpItems>
