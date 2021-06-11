@@ -3,7 +3,7 @@ Module Name: Nutanix.Prism.Common
 Module Guid: 90f6d4c4-e5b2-4ce4-9d79-6b6afefe9aa6
 Download Help Link: https://raw.githubusercontent.com/nutanix/ntnx-api-cmdlet-help/main/
 
-Help Version: 0.0.0.37
+Help Version: 0.1.0.0
 Locale: en-US
 ---
 
