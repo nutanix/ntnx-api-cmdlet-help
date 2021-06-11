@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Nutanix.Prism.PS.Cmds.dll-Help.xml
 Module Name: Nutanix.Prism.PS.Cmds
 online version:
@@ -95,7 +95,6 @@ PS C:\> Get-VM -Count 10 -Page 2
 ```
 
 Displays 10 VMs from the second page
-
 
 ## PARAMETERS
 
