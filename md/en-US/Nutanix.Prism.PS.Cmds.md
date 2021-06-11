@@ -2,7 +2,7 @@
 Module Name: Nutanix.Prism.Ps.Cmds
 Module Guid: 425a79de-4a4d-4fc0-be1c-c6bc618099ea
 Download Help Link: https://raw.githubusercontent.com/jaekwonpark/docs/master/cmdlet-help/
-Help Version: 0.0.0.7
+Help Version: 0.0.0.8
 Locale: en-US
 ---
 
