@@ -1,5 +1,5 @@
-# Help package for Nutanix Cmdlets
-Help package for Nutanix Cmdlets provides updates via command line. First, install the cmdlets
+## Help package for Nutanix Cmdlets
+Help package for Nutanix Cmdlets provides updates via command line. First, install the cmdlets.
 
 ```
 PS> Install-Module Nutanix.Cli
