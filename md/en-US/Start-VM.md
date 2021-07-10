@@ -23,7 +23,7 @@ Start-VM -VmInfo <Info> [-Servers <System.Collections.Generic.HashSet`1[System.S
 ```
 
 ## DESCRIPTION
-Sets power state on to given VM.
+Sets power state ON for a given VM.
 
 ## EXAMPLES
 

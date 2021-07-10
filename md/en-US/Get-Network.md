@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-Network
 
 ## SYNOPSIS
-Displays all networks available from the connected Prism Central.
+Displays all networks available for the connected Prism Central.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-Network [[-Servers] <System.Collections.Generic.HashSet`1[System.String]>] [
 ```
 
 ## DESCRIPTION
-Displays all networks available from the connected Prism Central. This is typically used to get network UUID to atttach to VM.
+Displays all networks available for the connected Prism Central. This is typically used to get network UUID to attach to VM.
 
 ## EXAMPLES
 

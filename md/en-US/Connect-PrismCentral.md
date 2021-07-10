@@ -25,18 +25,20 @@ Connect-PrismCentral [-Server] <String> -UserName <String> -Password <SecureStri
 ```
 
 ## DESCRIPTION
-Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with different IP or Hostname. To disconnect a Prism Central, use Disconnect-PrismCentral with -Server. To disconnect all, use * for -Server value. The session is valid for 15 minutes from last access to the Prism Central.
+Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with different IP or Hostname. The session is valid for 15 minutes from last access to the Prism Central.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCert
+PS C:\> Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts
 ```
 
-Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignore validation of certificate. The $Secure value can be created with ConvertTo-SecureString like following. Replace 'adminpassword' with your real admin password string
+Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignore validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. 
 
 $Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force
+
+Secure command should be executed before Connect-PrismCentral command. This command can be executed in the same Powershell window
 
 ### Example 2
 ```powershell
@@ -135,7 +137,9 @@ Accept wildcard characters: False
 ```
 
 ### -SessionTimeoutSeconds
-Session timeout in seconds. If there is no activity against Prism Central within this seconds, the session will be disconnected
+Session timeout in seconds. If there is no activity against Prism Central within these seconds, the session will be disconnected
+
+The default Session Timeout is 15 minutes if the user does not specify this parameter explicitly
 
 ```yaml
 Type: UInt32

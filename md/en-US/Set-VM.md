@@ -36,7 +36,7 @@ Updates the VM attributes.
 PS C:\> Get-VM -Uuid $vmUuid | Set-VM -Name NewName | Wait-Task
 ```
 
-Updates the name to NewName for the VM $vmUuid then waits for the task to be completed.
+Updates the VM name to NewName with UUID as $vmUuid and waits for the task to be completed.
 
 ## PARAMETERS
 
