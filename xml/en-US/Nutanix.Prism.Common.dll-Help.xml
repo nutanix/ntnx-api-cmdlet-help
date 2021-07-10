@@ -10,7 +10,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with different IP or Hostname. To disconnect a Prism Central, use Disconnect-PrismCentral with -Server. To disconnect all, use * for -Server value. The session is valid for 15 minutes from last access to the Prism Central.</maml:para>
+      <maml:para>Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with different IP or Hostname. The session is valid for 15 minutes from last access to the Prism Central.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -64,7 +64,8 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>SessionTimeoutSeconds</maml:name>
           <maml:description>
-            <maml:para>Session timeout in seconds. If there is no activity against Prism Central within this seconds, the session will be disconnected</maml:para>
+            <maml:para>Session timeout in seconds. If there is no activity against Prism Central within these seconds, the session will be disconnected</maml:para>
+            <maml:para>The default Session Timeout is 15 minutes if the user does not specify this parameter explicitly</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
           <dev:type>
@@ -125,7 +126,8 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>SessionTimeoutSeconds</maml:name>
           <maml:description>
-            <maml:para>Session timeout in seconds. If there is no activity against Prism Central within this seconds, the session will be disconnected</maml:para>
+            <maml:para>Session timeout in seconds. If there is no activity against Prism Central within these seconds, the session will be disconnected</maml:para>
+            <maml:para>The default Session Timeout is 15 minutes if the user does not specify this parameter explicitly</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
           <dev:type>
@@ -212,7 +214,8 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>SessionTimeoutSeconds</maml:name>
         <maml:description>
-          <maml:para>Session timeout in seconds. If there is no activity against Prism Central within this seconds, the session will be disconnected</maml:para>
+          <maml:para>Session timeout in seconds. If there is no activity against Prism Central within these seconds, the session will be disconnected</maml:para>
+          <maml:para>The default Session Timeout is 15 minutes if the user does not specify this parameter explicitly</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">UInt32</command:parameterValue>
         <dev:type>
@@ -278,10 +281,11 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCert</dev:code>
+        <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts</dev:code>
         <dev:remarks>
-          <maml:para>Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignore validation of certificate. The $Secure value can be created with ConvertTo-SecureString like following. Replace 'adminpassword' with your real admin password string</maml:para>
+          <maml:para>Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignore validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string</maml:para>
           <maml:para>$Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force</maml:para>
+          <maml:para>Secure command should be executed before Connect-PrismCentral command. This command can be executed in the same Powershell window</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -398,7 +402,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Creates a Nutanix Object. This is used to create an object for parameters for other commands which requires certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`</maml:para>
+      <maml:para>Creates a Nutanix Object. This is used to create a object used as parameters for other commands which requires certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>

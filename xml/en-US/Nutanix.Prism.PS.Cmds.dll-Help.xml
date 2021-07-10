@@ -6,11 +6,11 @@
       <command:verb>Get</command:verb>
       <command:noun>Cluster</command:noun>
       <maml:description>
-        <maml:para>Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under connected prism centrals are displaye</maml:para>
+        <maml:para>Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under the connected prism centrals are displayed</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Shows name, UUID of the cluster and name, UUID, hostname of the registered Prism Central</maml:para>
+      <maml:para>Displays Cluster name, UUID and hostname of the Prism Central</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -136,7 +136,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Cluster</dev:code>
         <dev:remarks>
-          <maml:para>{{ Add example description here }} Displays all the cluster registered in all connected Prism Central.</maml:para>
+          <maml:para>Displays all the cluster registered for the connected Prism Central.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -162,11 +162,11 @@
       <command:verb>Get</command:verb>
       <command:noun>Image</command:noun>
       <maml:description>
-        <maml:para>Displays the image info of specified uuid or all Images.</maml:para>
+        <maml:para>Displays the image information of specified UUID.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>If -ImangeId is given, displays the information of the specific image, otherwise, displays all images from the Prism Central. Any images that is added directly from Prism Element will not be displayed.</maml:para>
+      <maml:para>If -ImageId is given, displays the information of the specific image, otherwise, displays all images from the Prism Central. Any images that are added directly from Prism Element will not be displayed.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -284,7 +284,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425</dev:code>
         <dev:remarks>
-          <maml:para>Displays the image infor of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425</maml:para>
+          <maml:para>Displays the image information of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -1067,11 +1067,11 @@
       <command:verb>Get</command:verb>
       <command:noun>Network</command:noun>
       <maml:description>
-        <maml:para>Displays all networks available from the connected Prism Central.</maml:para>
+        <maml:para>Displays all networks available for the connected Prism Central.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays all networks available from the connected Prism Central. This is typically used to get network UUID to atttach to VM.</maml:para>
+      <maml:para>Displays all networks available for the connected Prism Central. This is typically used to get network UUID to attach to VM.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1198,7 +1198,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays storage containsers available from connected Prism Central. Typically used to get UUID of the storage container to attach to a VM.</maml:para>
+      <maml:para>Displays storage containers available for the connected Prism Central. Typically used to get UUID of the storage container to attach to a VM.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1309,7 +1309,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-StorageContainer</dev:code>
         <dev:remarks>
-          <maml:para>Displays a list of available storage container from the connected Prism Central.</maml:para>
+          <maml:para>Displays a list of available storage container for the connected Prism Central.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -1325,7 +1325,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays tasks from the connected Prism Central. Typically used to get status of running tasks. To get the task already completed, use `-IncludeCompleted`. To wait until the task is completd, append pipe followed by `Wait-Task`.</maml:para>
+      <maml:para>Displays tasks for the connected Prism Central. Typically used to get status of running tasks. To get the task already completed, use `-IncludeCompleted`. To wait until the task is completed, append pipe followed by `Wait-Task`. Default task count value is 20</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1483,7 +1483,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Task</dev:code>
         <dev:remarks>
-          <maml:para>Displays last 20 task that are running from each connected prism central. If there is no tasks currenly running, nothing will be displayed.</maml:para>
+          <maml:para>Displays last 20 task that are running for each connected prism central. If there is no tasks currently running, nothing will be displayed.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -1506,7 +1506,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays a list of VM from connected Prism Central</maml:para>
+      <maml:para>Displays a list of VM for the connected Prism Central</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1526,7 +1526,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ClusterName</maml:name>
           <maml:description>
-            <maml:para>Name of cluster to search VMs from. If not given, it searches from all connected Prism Central or given Prism Central host.</maml:para>
+            <maml:para>Name of cluster to search VMs from. If not given, it searches for all connected Prism Central or given Prism Central host.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -1600,7 +1600,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ClusterName</maml:name>
           <maml:description>
-            <maml:para>Name of cluster to search VMs from. If not given, it searches from all connected Prism Central or given Prism Central host.</maml:para>
+            <maml:para>Name of cluster to search VMs from. If not given, it searches for all connected Prism Central or given Prism Central host.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -1648,7 +1648,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>StartsWith</maml:name>
           <maml:description>
-            <maml:para>Displays VMs with the name starts with the given name</maml:para>
+            <maml:para>Displays VMs with the names starting with the given name</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -1674,7 +1674,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ClusterName</maml:name>
           <maml:description>
-            <maml:para>Name of cluster to search VMs from. If not given, it searches from all connected Prism Central or given Prism Central host.</maml:para>
+            <maml:para>Name of cluster to search VMs from. If not given, it searches for all connected Prism Central or given Prism Central host.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -1698,7 +1698,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EndsWith</maml:name>
           <maml:description>
-            <maml:para>Displays the VMs that the name ends with the given name</maml:para>
+            <maml:para>Displays VMs with the names ending with the given name</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -1842,7 +1842,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>ClusterName</maml:name>
         <maml:description>
-          <maml:para>Name of cluster to search VMs from. If not given, it searches from all connected Prism Central or given Prism Central host.</maml:para>
+          <maml:para>Name of cluster to search VMs from. If not given, it searches for all connected Prism Central or given Prism Central host.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -1878,7 +1878,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>EndsWith</maml:name>
         <maml:description>
-          <maml:para>Displays the VMs that the name ends with the given name</maml:para>
+          <maml:para>Displays VMs with the names ending with the given name</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -1938,7 +1938,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>StartsWith</maml:name>
         <maml:description>
-          <maml:para>Displays VMs with the name starts with the given name</maml:para>
+          <maml:para>Displays VMs with the names starting with the given name</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -2006,7 +2006,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM</dev:code>
         <dev:remarks>
-          <maml:para>Displays all VMs from connected Prism Central</maml:para>
+          <maml:para>Displays all VMs for the connected Prism Central</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -2020,21 +2020,21 @@
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM testvm -Contains</dev:code>
         <dev:remarks>
-          <maml:para>Displays all VMs that the name contains `testvm`.</maml:para>
+          <maml:para>Displays all VMs that contains the name as `testvm`.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 4 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM testvm -StartsWith</dev:code>
         <dev:remarks>
-          <maml:para>Displays all VMs that the name starts with `testvm`.</maml:para>
+          <maml:para>Displays all VMs with names starting with `testvm`.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 5 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM testvm -EndsWith</dev:code>
         <dev:remarks>
-          <maml:para>Displays all VMs that the name ends with `testvm`.</maml:para>
+          <maml:para>Displays all VMs with names ending with `testvm`.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -2352,7 +2352,7 @@
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>PS C:\&gt; New-Image -Servers 10.46.28.27 -Name testimage1 -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2</dev:code>
         <dev:remarks>
-          <maml:para>Creates a new image in Prisme Central 10.46.28.27. Prism Central will automatically select available cluster and creates the image.</maml:para>
+          <maml:para>Creates a new image on Prism Central 10.46.28.27. Prism Central will automatically select the available cluster and creates the image on it.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2987,7 +2987,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Updates the attributees of given image.</maml:para>
+      <maml:para>Updates the attributes of given image.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -3023,7 +3023,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>MetaData</maml:name>
           <maml:description>
-            <maml:para>Metadata for the image to be updated. Typically, if used with `Get-Image`, it will automaticaly pick up the metadata from the output of Get-Image.</maml:para>
+            <maml:para>Metadata for the image to be updated. Typically, if used with `Get-Image`, it will automatically pick up the metadata from the output of Get-Image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">EntityMetadata</command:parameterValue>
           <dev:type>
@@ -3059,7 +3059,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Spec</maml:name>
           <maml:description>
-            <maml:para>Spec of the image to be updated. Typically, if used with `Get-Image`, it will automaticaly pick up the spec from the output of Get-Image.</maml:para>
+            <maml:para>Spec of the image to be updated. Typically, if used with `Get-Image`, it will automatically pick up the spec from the output of Get-Image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Spec</command:parameterValue>
           <dev:type>
@@ -3098,7 +3098,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>MetaData</maml:name>
         <maml:description>
-          <maml:para>Metadata for the image to be updated. Typically, if used with `Get-Image`, it will automaticaly pick up the metadata from the output of Get-Image.</maml:para>
+          <maml:para>Metadata for the image to be updated. Typically, if used with `Get-Image`, it will automatically pick up the metadata from the output of Get-Image.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">EntityMetadata</command:parameterValue>
         <dev:type>
@@ -3134,7 +3134,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Spec</maml:name>
         <maml:description>
-          <maml:para>Spec of the image to be updated. Typically, if used with `Get-Image`, it will automaticaly pick up the spec from the output of Get-Image.</maml:para>
+          <maml:para>Spec of the image to be updated. Typically, if used with `Get-Image`, it will automatically pick up the spec from the output of Get-Image.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Spec</command:parameterValue>
         <dev:type>
@@ -3580,7 +3580,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM -Uuid $vmUuid | Set-VM -Name NewName | Wait-Task</dev:code>
         <dev:remarks>
-          <maml:para>Updates the name to NewName for the VM $vmUuid then waits for the task to be completed.</maml:para>
+          <maml:para>Updates the VM name to NewName with UUID as $vmUuid and waits for the task to be completed.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -3596,7 +3596,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Sets power state on to given VM.</maml:para>
+      <maml:para>Sets power state ON for a given VM.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -3919,7 +3919,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Waits for one or more of tasks are finished. If Timeoutseconds is not given, waits until 30 seconds. Maximum wait is 30 seconds. If task does not finish till timeout, it will exit with the command to continue wait for another 30 seconds. Copy and paste the command to continue waiting for the task.</maml:para>
+      <maml:para>Waits for one or more of tasks to finish. If Timeoutseconds is not given, waits until 30 seconds. Maximum wait time is 30 seconds. If a task does not finish till timeout, it will exit with the command to continue to wait for another 30 seconds. Run the same command to continue waiting for the task.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -4085,7 +4085,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM -Uuid $vmUuid | Stop-VM | Wait-Task</dev:code>
         <dev:remarks>
-          <maml:para>Stops the VM and waits for the task is completed. If the -Timeoutseconds is not given, it waits for 30 seconds. If the task is still not completed, it displays error with the Wait-Task command with the task ID. Copy and Paste the command to continue for another 30 secods or for the timeout given by -Timeoutseconds.</maml:para>
+          <maml:para>Stops the VM and waits for the task to be completed. If the -Timeoutseconds is not given, it waits for 30 seconds. If the task is still not completed, it displays an error with the TaskID and the Wait-Task command. RUn the same command to continue for another 30 seconds or for the timeout given by -Timeoutseconds.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>

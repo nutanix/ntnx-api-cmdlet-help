@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-Cluster
 
 ## SYNOPSIS
-Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under connected prism centrals are displaye
+Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under the connected prism centrals are displayed
 
 ## SYNTAX
 
@@ -18,14 +18,14 @@ Get-Cluster [[-Name] <String>] [-Servers <System.Collections.Generic.HashSet`1[S
  [<CommonParameters>]
 ```
 
-### Alt1
+### Alternate
 ```
 Get-Cluster [[-Uuid] <String>] [-Servers <System.Collections.Generic.HashSet`1[System.String]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Shows name, UUID of the cluster and name, UUID, hostname of the registered Prism Central
+Displays Cluster name, UUID and hostname of the Prism Central
 
 ## EXAMPLES
 
@@ -34,8 +34,7 @@ Shows name, UUID of the cluster and name, UUID, hostname of the registered Prism
 PS C:\> Get-Cluster
 ```
 
-{{ Add example description here }}
-Displays all the cluster registered in all connected Prism Central.
+Displays all the cluster registered for the connected Prism Central.
 
 ### Example 2
 ```powershell

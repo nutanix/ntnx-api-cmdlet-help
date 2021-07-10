@@ -18,7 +18,7 @@ Set-Image -Spec <Spec> -MetaData <EntityMetadata> [-Name <String>] [-ImageType <
 ```
 
 ## DESCRIPTION
-Updates the attributees of given image.
+Updates the attributes of given image.
 
 ## EXAMPLES
 
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 ```
 
 ### -MetaData
-Metadata for the image to be updated. Typically, if used with `Get-Image`, it will automaticaly pick up the metadata from the output of Get-Image.
+Metadata for the image to be updated. Typically, if used with `Get-Image`, it will automatically pick up the metadata from the output of Get-Image.
 
 ```yaml
 Type: EntityMetadata
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -Spec
-Spec of the image to be updated. Typically, if used with `Get-Image`, it will automaticaly pick up the spec from the output of Get-Image.
+Spec of the image to be updated. Typically, if used with `Get-Image`, it will automatically pick up the spec from the output of Get-Image.
 
 ```yaml
 Type: Spec
