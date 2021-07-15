@@ -34,6 +34,7 @@ Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repe
 PS C:\> Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts
 ```
 
+
 Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignore validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. 
 
 $Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force
