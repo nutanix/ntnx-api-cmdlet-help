@@ -39,6 +39,7 @@ PS C:\> New-Image -Name testimage1 -ClusterName mycluster -ImageType DISK_IMAGE 
 ```
 
 Creates a new image in cluster `mycluster`
+-SourceUri is the source of the image from where the image should be picked to create New-Image
 
 ### Example 2
 ```powershell

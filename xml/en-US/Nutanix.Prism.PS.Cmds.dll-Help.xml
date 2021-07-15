@@ -374,9 +374,9 @@
             <maml:para>  // Number of read IO per second.\   num_read_iops </maml:para>
             <maml:para>  // Number of write IO per second.\   num_write_iops </maml:para>
             <maml:para>  // Average read IO latency. This is not available for VDisk, Disk, Node,\   // StoragePool and Cluster since Stargate does not have the stats.\   avg_write_io_latency_usecs </maml:para>
-            <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
-            <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
-            <maml:para>  // Average read IO latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
+            <maml:para>  // Number of read operations per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
+            <maml:para>  // Number of write operations per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
+            <maml:para>  // Average write operation latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
             <maml:para>  // Number of read write IO per second reported by the Hypervisor.\   hypervisor_read_io_bandwidth_kBps </maml:para>
             <maml:para>  // Number of write write IO per second reported by the Hypervisor.\   hypervisor_write_io_bandwidth_kBps</maml:para>
             <maml:para>\ \   / Controller derived stats /</maml:para>
@@ -518,9 +518,9 @@
             <maml:para>  // Number of read IO per second.\   num_read_iops </maml:para>
             <maml:para>  // Number of write IO per second.\   num_write_iops </maml:para>
             <maml:para>  // Average read IO latency. This is not available for VDisk, Disk, Node,\   // StoragePool and Cluster since Stargate does not have the stats.\   avg_write_io_latency_usecs </maml:para>
-            <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
-            <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
-            <maml:para>  // Average read IO latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
+            <maml:para>  // Number of read operations per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
+            <maml:para>  // Number of write operations per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
+            <maml:para>  // Average write operation latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
             <maml:para>  // Number of read write IO per second reported by the Hypervisor.\   hypervisor_read_io_bandwidth_kBps </maml:para>
             <maml:para>  // Number of write write IO per second reported by the Hypervisor.\   hypervisor_write_io_bandwidth_kBps</maml:para>
             <maml:para>\ \   / Controller derived stats /</maml:para>
@@ -638,9 +638,9 @@
             <maml:para>  // Number of read IO per second.\   num_read_iops </maml:para>
             <maml:para>  // Number of write IO per second.\   num_write_iops </maml:para>
             <maml:para>  // Average read IO latency. This is not available for VDisk, Disk, Node,\   // StoragePool and Cluster since Stargate does not have the stats.\   avg_write_io_latency_usecs </maml:para>
-            <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
-            <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
-            <maml:para>  // Average read IO latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
+            <maml:para>  // Number of read operations per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
+            <maml:para>  // Number of write operations per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
+            <maml:para>  // Average write operation latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
             <maml:para>  // Number of read write IO per second reported by the Hypervisor.\   hypervisor_read_io_bandwidth_kBps </maml:para>
             <maml:para>  // Number of write write IO per second reported by the Hypervisor.\   hypervisor_write_io_bandwidth_kBps</maml:para>
             <maml:para>\ \   / Controller derived stats /</maml:para>
@@ -782,9 +782,9 @@
             <maml:para>  // Number of read IO per second.\   num_read_iops </maml:para>
             <maml:para>  // Number of write IO per second.\   num_write_iops </maml:para>
             <maml:para>  // Average read IO latency. This is not available for VDisk, Disk, Node,\   // StoragePool and Cluster since Stargate does not have the stats.\   avg_write_io_latency_usecs </maml:para>
-            <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
-            <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
-            <maml:para>  // Average read IO latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
+            <maml:para>  // Number of read operations per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
+            <maml:para>  // Number of write operations per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
+            <maml:para>  // Average write operation latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
             <maml:para>  // Number of read write IO per second reported by the Hypervisor.\   hypervisor_read_io_bandwidth_kBps </maml:para>
             <maml:para>  // Number of write write IO per second reported by the Hypervisor.\   hypervisor_write_io_bandwidth_kBps</maml:para>
             <maml:para>\ \   / Controller derived stats /</maml:para>
@@ -938,9 +938,9 @@
           <maml:para>  // Number of read IO per second.\   num_read_iops </maml:para>
           <maml:para>  // Number of write IO per second.\   num_write_iops </maml:para>
           <maml:para>  // Average read IO latency. This is not available for VDisk, Disk, Node,\   // StoragePool and Cluster since Stargate does not have the stats.\   avg_write_io_latency_usecs </maml:para>
-          <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
-          <maml:para>  // Number of IO per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
-          <maml:para>  // Average read IO latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
+          <maml:para>  // Number of read operations per second as reported by the Hypervisor.\   hypervisor_num_read_iops </maml:para>
+          <maml:para>  // Number of write operations per second as reported by the Hypervisor.\   hypervisor_num_write_iops </maml:para>
+          <maml:para>  // Average write operation latency as reproted by the Hypervisor.\   hypervisor_avg_write_io_latency_usecs </maml:para>
           <maml:para>  // Number of read write IO per second reported by the Hypervisor.\   hypervisor_read_io_bandwidth_kBps </maml:para>
           <maml:para>  // Number of write write IO per second reported by the Hypervisor.\   hypervisor_write_io_bandwidth_kBps</maml:para>
           <maml:para>\ \   / Controller derived stats /</maml:para>
@@ -2345,7 +2345,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; New-Image -Name testimage1 -ClusterName mycluster -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2</dev:code>
         <dev:remarks>
-          <maml:para>Creates a new image in cluster `mycluster`</maml:para>
+          <maml:para>Creates a new image in cluster `mycluster` -SourceUri is the source of the image from where the image should be picked to create New-Image</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
