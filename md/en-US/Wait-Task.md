@@ -25,7 +25,7 @@ Wait-Task -TaskInfos <System.Collections.Generic.List`1[Nutanix.Prism.Data.Task.
 ```
 
 ## DESCRIPTION
-Waits for one or more of tasks are finished. If Timeoutseconds is not given, waits until 30 seconds. Maximum wait is 30 seconds. If task does not finish till timeout, it will exit with the command to continue wait for another 30 seconds. Copy and paste the command to continue waiting for the task.
+Waits for one or more of tasks to finish. If Timeoutseconds is not given, waits until 30 seconds. Maximum wait time is 30 seconds. If a task does not finish till timeout, it will exit with the command to continue to wait for another 30 seconds. Run the same command to continue waiting for the task.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Waits for one or more of tasks are finished. If Timeoutseconds is not given, wai
 PS C:\> Get-VM -Uuid $vmUuid | Stop-VM | Wait-Task
 ```
 
-Stops the VM and waits for the task is completed. If the -Timeoutseconds is not given, it waits for 30 seconds. If the task is still not completed, it displays error with the Wait-Task command with the task ID. Copy and Paste the command to continue for another 30 secods or for the timeout given by -Timeoutseconds.
+Stops the VM and waits for the task to be completed. If the -Timeoutseconds is not given, it waits for 30 seconds. If the task is still not completed, it displays an error with the TaskID and the Wait-Task command. RUn the same command to continue for another 30 seconds or for the timeout given by -Timeoutseconds.
 
 ## PARAMETERS
 

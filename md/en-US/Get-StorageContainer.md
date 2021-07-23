@@ -18,7 +18,7 @@ Get-StorageContainer [-Page <Int32>] [-Count <Int32>]
 ```
 
 ## DESCRIPTION
-Displays storage containsers available from connected Prism Central. Typically used to get UUID of the storage container to attach to a VM.
+Displays storage containers available for the connected Prism Central. Typically used to get UUID of the storage container to attach to a VM.
 
 ## EXAMPLES
 
@@ -27,7 +27,7 @@ Displays storage containsers available from connected Prism Central. Typically u
 PS C:\> Get-StorageContainer
 ```
 
-Displays a list of available storage container from the connected Prism Central.
+Displays a list of available storage container for the connected Prism Central.
 
 ## PARAMETERS
 

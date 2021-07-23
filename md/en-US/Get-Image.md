@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-Image
 
 ## SYNOPSIS
-Displays the image info of specified uuid or all Images.
+Displays the image information of specified UUID.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-Image [-IncludeVmDiskId] [[-ImageId] <String>]
 ```
 
 ## DESCRIPTION
-If -ImangeId is given, displays the information of the specific image, otherwise, displays all images from the Prism Central. Any images that is added directly from Prism Element will not be displayed.
+If -ImageId is given, displays the information of the specific image, otherwise, displays all images from the Prism Central. Any images that are added directly from Prism Element will not be displayed.
 
 ## EXAMPLES
 
@@ -27,7 +27,7 @@ If -ImangeId is given, displays the information of the specific image, otherwise
 PS C:\> Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425
 ```
 
-Displays the image infor of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425
+Displays the image information of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425
 
 ### Example 2
 ```powershell

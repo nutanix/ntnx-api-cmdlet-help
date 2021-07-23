@@ -277,13 +277,13 @@ Metrics name. Available metrics name are \
   // StoragePool and Cluster since Stargate does not have the stats.\
   avg_write_io_latency_usecs 
 
-  // Number of IO per second as reported by the Hypervisor.\
+  // Number of read operations per second as reported by the Hypervisor.\
   hypervisor_num_read_iops 
 
-  // Number of IO per second as reported by the Hypervisor.\
+  // Number of write operations per second as reported by the Hypervisor.\
   hypervisor_num_write_iops 
 
-  // Average read IO latency as reproted by the Hypervisor.\
+  // Average write operation latency as reproted by the Hypervisor.\
   hypervisor_avg_write_io_latency_usecs 
 
   // Number of read write IO per second reported by the Hypervisor.\
