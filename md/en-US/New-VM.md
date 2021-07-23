@@ -33,10 +33,8 @@ Creates a New VM
 
 ### Example 1
 ```powershell
-PS C:\> {{ Add example code here }}
+PS C:\> New-VM -Name testvm1 -ClusterName mycluster -NumVcpus 1 -MemoryMb 500 | Wait-Task
 ```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
