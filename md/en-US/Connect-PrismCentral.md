@@ -38,7 +38,7 @@ Connects to Prism Central IP 10.36.240.21 as username admin and the password sto
 
 $Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force
 
-Secure command should be executed before Connect-PrismCentral command. This command can be executed in the same Powershell window
+Secure command should be executed before Connect-PrismCentral command. This command can be executed in the same Powershell window.
 
 ### Example 2
 ```powershell
@@ -61,7 +61,7 @@ Connects to Prism Central IP 10.36.240.21 with user name `admin`. This will prom
 ## PARAMETERS
 
 ### -AcceptInvalidSSLCerts
-Whether to accept invalid SSL certificates. When you have a certificate that is not issued by the certificate authority and you trust the certificate, then use this option
+Whether to accept invalid SSL certificates. When you have a certificate that is not issued by the certificate authority and you trust the certificate, then use this option.
 
 ```yaml
 Type: SwitchParameter
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString <password> -AsPlainText -Force` where <password> is the password in raw text string, then use $Secure as the value of this parameter
+Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString <password> -AsPlainText -Force` where <password> is the password in raw text string, then use $Secure as the value of this parameter.
 
 ```yaml
 Type: SecureString
@@ -137,9 +137,9 @@ Accept wildcard characters: False
 ```
 
 ### -SessionTimeoutSeconds
-Session timeout in seconds. If there is no activity against Prism Central within these seconds, the session will be disconnected
+Session timeout in seconds. If there is no activity against Prism Central within these seconds, the session will be disconnected.
 
-The default Session Timeout is 15 minutes if the user does not specify this parameter explicitly
+The default Session Timeout is 15 minutes if the user does not specify this parameter explicitly.
 
 ```yaml
 Type: UInt32

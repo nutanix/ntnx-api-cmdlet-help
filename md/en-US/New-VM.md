@@ -39,6 +39,7 @@ PS C:\> New-VM -Name testvm1 -ClusterName mycluster -NumVcpus 1 -MemoryMb 500 | 
 ## PARAMETERS
 
 ### -BootConfig
+BootConfig object to attach. Create using New-NutanixObject then assign values to each property.
 
 ```yaml
 Type: BootConfigDTO
@@ -53,6 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
+Name of the Cluster
 
 ```yaml
 Type: String
@@ -67,6 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterUUID
+UUID of the Cluster
 
 ```yaml
 Type: String
@@ -81,6 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
+Description of the VM
 
 ```yaml
 Type: String
@@ -95,6 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestOS
+The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS if ignored if the cluster is AHV.
 
 ```yaml
 Type: String
@@ -109,6 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemoryMb
+Memory size in Mb
 
 ```yaml
 Type: Int64
@@ -123,6 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
+Name of the VM
 
 ```yaml
 Type: String
@@ -137,6 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumCoresPerVcpu
+Number of cores per Vcpu
 
 ```yaml
 Type: Int64
@@ -151,6 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumVcpus
+Number of Vcpu
 
 ```yaml
 Type: Int64
@@ -165,6 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmDisks
+List of disks cloned and attached
 
 ```yaml
 Type: VMDiskDTO[]
@@ -179,6 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmNics
+List of networks to be connected
 
 ```yaml
 Type: VMNicSpecDTO[]
