@@ -25,7 +25,7 @@ Get-Cluster [[-Uuid] <String>] [-Servers <System.Collections.Generic.HashSet`1[S
 ```
 
 ## DESCRIPTION
-Displays Cluster name, UUID and hostname of the Prism Central
+Displays Cluster name, UUID and hostname of the connected Prism Central
 
 ## EXAMPLES
 

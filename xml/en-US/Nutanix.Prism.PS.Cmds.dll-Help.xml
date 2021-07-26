@@ -10,7 +10,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays Cluster name, UUID and hostname of the Prism Central</maml:para>
+      <maml:para>Displays Cluster name, UUID and hostname of the connected Prism Central</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2360,27 +2360,39 @@
   </command:command>
   <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
     <command:details>
-      <command:name>Set-VM</command:name>
-      <command:verb>Set</command:verb>
+      <command:name>New-VM</command:name>
+      <command:verb>New</command:verb>
       <command:noun>VM</command:noun>
       <maml:description>
-        <maml:para>Updates VM</maml:para>
+        <maml:para>Creates a New VM</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Updates the VM attributes.</maml:para>
+      <maml:para>Creates a New VM</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
-        <maml:name>Set-VM</maml:name>
+        <maml:name>New-VM</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
-          <maml:name>Boot</maml:name>
+          <maml:name>BootConfig</maml:name>
           <maml:description>
             <maml:para>BootConfig object to attach. Create using New-NutanixObject then assign values to each property.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">BootConfigDTO</command:parameterValue>
           <dev:type>
             <maml:name>BootConfigDTO</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>ClusterName</maml:name>
+          <maml:description>
+            <maml:para>Name of the Cluster</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -2398,6 +2410,18 @@
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>GuestOS</maml:name>
+          <maml:description>
+            <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS if ignored if the cluster is AHV.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>MemoryMb</maml:name>
           <maml:description>
             <maml:para>Memory size in Mb</maml:para>
@@ -2409,7 +2433,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
             <maml:para>Name of the VM</maml:para>
@@ -2433,7 +2457,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumVcpus</maml:name>
           <maml:description>
             <maml:para>Number of Vcpu</maml:para>
@@ -2445,41 +2469,53 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
-          <maml:name>Servers</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>VmDisks</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>List of disks cloned and attached</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">VMDiskDTO[]</command:parameterValue>
           <dev:type>
-            <maml:name>System.Collections.Generic.HashSet`1[System.String]</maml:name>
+            <maml:name>VMDiskDTO[]</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
-          <maml:name>Uuid</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>VmNics</maml:name>
           <maml:description>
-            <maml:para>UUID of the VM</maml:para>
+            <maml:para>List of networks to be connected</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">VMNicSpecDTO[]</command:parameterValue>
           <dev:type>
-            <maml:name>String</maml:name>
+            <maml:name>VMNicSpecDTO[]</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
       </command:syntaxItem>
       <command:syntaxItem>
-        <maml:name>Set-VM</maml:name>
+        <maml:name>New-VM</maml:name>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
-          <maml:name>Boot</maml:name>
+          <maml:name>BootConfig</maml:name>
           <maml:description>
             <maml:para>BootConfig object to attach. Create using New-NutanixObject then assign values to each property.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">BootConfigDTO</command:parameterValue>
           <dev:type>
             <maml:name>BootConfigDTO</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>ClusterUUID</maml:name>
+          <maml:description>
+            <maml:para>UUID of the Cluster</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -2497,6 +2533,18 @@
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>GuestOS</maml:name>
+          <maml:description>
+            <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS if ignored if the cluster is AHV.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+          <dev:type>
+            <maml:name>String</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>MemoryMb</maml:name>
           <maml:description>
             <maml:para>Memory size in Mb</maml:para>
@@ -2508,7 +2556,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
             <maml:para>Name of the VM</maml:para>
@@ -2532,7 +2580,7 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumVcpus</maml:name>
           <maml:description>
             <maml:para>Number of Vcpu</maml:para>
@@ -2544,26 +2592,26 @@
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
-          <maml:name>Servers</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>VmDisks</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>List of disks cloned and attached</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">VMDiskDTO[]</command:parameterValue>
           <dev:type>
-            <maml:name>System.Collections.Generic.HashSet`1[System.String]</maml:name>
+            <maml:name>VMDiskDTO[]</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
         </command:parameter>
-        <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
-          <maml:name>VmInfo</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+          <maml:name>VmNics</maml:name>
           <maml:description>
-            <maml:para>VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Set-VM -Name NewName</maml:para>
+            <maml:para>List of networks to be connected</maml:para>
           </maml:description>
-          <command:parameterValue required="true" variableLength="false">Info</command:parameterValue>
+          <command:parameterValue required="true" variableLength="false">VMNicSpecDTO[]</command:parameterValue>
           <dev:type>
-            <maml:name>Info</maml:name>
+            <maml:name>VMNicSpecDTO[]</maml:name>
             <maml:uri />
           </dev:type>
           <dev:defaultValue>None</dev:defaultValue>
@@ -2572,13 +2620,37 @@
     </command:syntax>
     <command:parameters>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
-        <maml:name>Boot</maml:name>
+        <maml:name>BootConfig</maml:name>
         <maml:description>
           <maml:para>BootConfig object to attach. Create using New-NutanixObject then assign values to each property.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">BootConfigDTO</command:parameterValue>
         <dev:type>
           <maml:name>BootConfigDTO</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>ClusterName</maml:name>
+        <maml:description>
+          <maml:para>Name of the Cluster</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>ClusterUUID</maml:name>
+        <maml:description>
+          <maml:para>UUID of the Cluster</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -2596,6 +2668,18 @@
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>GuestOS</maml:name>
+        <maml:description>
+          <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS if ignored if the cluster is AHV.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <dev:type>
+          <maml:name>String</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>MemoryMb</maml:name>
         <maml:description>
           <maml:para>Memory size in Mb</maml:para>
@@ -2607,7 +2691,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
           <maml:para>Name of the VM</maml:para>
@@ -2631,7 +2715,7 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>NumVcpus</maml:name>
         <maml:description>
           <maml:para>Number of Vcpu</maml:para>
@@ -2643,38 +2727,26 @@
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
-        <maml:name>Servers</maml:name>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>VmDisks</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>List of disks cloned and attached</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">VMDiskDTO[]</command:parameterValue>
         <dev:type>
-          <maml:name>System.Collections.Generic.HashSet`1[System.String]</maml:name>
+          <maml:name>VMDiskDTO[]</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
       </command:parameter>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
-        <maml:name>Uuid</maml:name>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
+        <maml:name>VmNics</maml:name>
         <maml:description>
-          <maml:para>UUID of the VM</maml:para>
+          <maml:para>List of networks to be connected</maml:para>
         </maml:description>
-        <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
+        <command:parameterValue required="true" variableLength="false">VMNicSpecDTO[]</command:parameterValue>
         <dev:type>
-          <maml:name>String</maml:name>
-          <maml:uri />
-        </dev:type>
-        <dev:defaultValue>None</dev:defaultValue>
-      </command:parameter>
-      <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
-        <maml:name>VmInfo</maml:name>
-        <maml:description>
-          <maml:para>VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Set-VM -Name NewName</maml:para>
-        </maml:description>
-        <command:parameterValue required="true" variableLength="false">Info</command:parameterValue>
-        <dev:type>
-          <maml:name>Info</maml:name>
+          <maml:name>VMNicSpecDTO[]</maml:name>
           <maml:uri />
         </dev:type>
         <dev:defaultValue>None</dev:defaultValue>
@@ -2691,14 +2763,6 @@
       </command:inputType>
       <command:inputType>
         <dev:type>
-          <maml:name>Nutanix.Prism.Data.Vm.Info</maml:name>
-        </dev:type>
-        <maml:description>
-          <maml:para></maml:para>
-        </maml:description>
-      </command:inputType>
-      <command:inputType>
-        <dev:type>
           <maml:name>System.Int64</maml:name>
         </dev:type>
         <maml:description>
@@ -2707,7 +2771,7 @@
       </command:inputType>
       <command:inputType>
         <dev:type>
-          <maml:name>Nutanix.Prism.DTO.Acropolis.BootConfigDTO</maml:name>
+          <maml:name>Nutanix.Prism.DTO.Acropolis.VMDiskDTO[]</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -2715,7 +2779,15 @@
       </command:inputType>
       <command:inputType>
         <dev:type>
-          <maml:name>System.Collections.Generic.HashSet`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</maml:name>
+          <maml:name>Nutanix.Prism.DTO.Acropolis.VMNicSpecDTO[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Nutanix.Prism.DTO.Acropolis.BootConfigDTO</maml:name>
         </dev:type>
         <maml:description>
           <maml:para></maml:para>
@@ -2740,9 +2812,9 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM -Uuid $vmUuid | Set-VM -Name NewName | Wait-Task</dev:code>
+        <dev:code>PS C:\&gt; New-VM -Name testvm1 -ClusterName mycluster -NumVcpus 1 -MemoryMb 500 | Wait-Task</dev:code>
         <dev:remarks>
-          <maml:para>Updates the name to NewName for the VM $vmUuid then waits for the task to be completed.</maml:para>
+          <maml:para></maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -4085,7 +4157,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM -Uuid $vmUuid | Stop-VM | Wait-Task</dev:code>
         <dev:remarks>
-          <maml:para>Stops the VM and waits for the task to be completed. If the -Timeoutseconds is not given, it waits for 30 seconds. If the task is still not completed, it displays an error with the TaskID and the Wait-Task command. RUn the same command to continue for another 30 seconds or for the timeout given by -Timeoutseconds.</maml:para>
+          <maml:para>Stops the VM and waits for the task to be completed. If the -Timeoutseconds is not given, it waits for 30 seconds. If the task is still not completed, it displays an error with the TaskID and the Wait-Task command. Run the same command to continue for another 30 seconds or for the timeout given by -Timeoutseconds.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
