@@ -36,6 +36,7 @@ PS C:\> Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Sec
 
 Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignores validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. 
 
+
 $Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force
 
 Secure command should be executed before Connect-PrismCentral command. This command can be executed in the same Powershell window.
