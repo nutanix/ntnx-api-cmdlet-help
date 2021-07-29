@@ -162,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmInfo
-VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Set-VM -Name NewName
+VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Set-VM -Name NewName
 
 ```yaml
 Type: Info

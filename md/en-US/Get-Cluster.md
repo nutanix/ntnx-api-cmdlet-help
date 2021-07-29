@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-Cluster
 
 ## SYNOPSIS
-Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under the connected prism centrals are displayed
+Displays cluster information registered with the prism central. If multiple prism centrals are connected, all clusters under the connected prism centrals are displayed
 
 ## SYNTAX
 
@@ -34,21 +34,21 @@ Displays Cluster name, UUID and hostname of the connected Prism Central
 PS C:\> Get-Cluster
 ```
 
-Displays all the cluster registered for the connected Prism Central.
+Displays the clusters registered with the Prism Central instance.
 
 ### Example 2
 ```powershell
 Get-Cluster mycluster
 ```
 
-Displays the cluster info of name mycluster
+Displays the cluster information about the cluster named mycluster
 
 ### Example 3
 ```powershell
 Get-Cluster 0005bade-af08-c5ec-0000-000000019dda
 ```
 
-Displays the cluster info of the cluster with uuid 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be either cluster name or UUID
+Displays information about the cluster with UUID 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be a cluster name or UUID
 
 ## PARAMETERS
 

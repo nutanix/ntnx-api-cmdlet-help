@@ -32,7 +32,7 @@ Sets power state ON for a given VM.
 PS C:\> Start-VM $vmUuid | Wait-Task
 ```
 
-Starts the VM then wait for the task completed.
+Starts the VM then wait for the task to be completed.
 
 ### Example 2
 ```powershell
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmInfo
-VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Start-VM
+VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Start-VM
 
 ```yaml
 Type: Info

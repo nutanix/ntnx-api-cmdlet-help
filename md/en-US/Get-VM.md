@@ -66,7 +66,7 @@ Displays all VMs with VM name `testvm`.
 PS C:\> Get-VM testvm -Contains
 ```
 
-Displays all VMs that contains the name as `testvm`.
+Displays all VMs that contain the name as `testvm`.
 
 ### Example 4
 ```powershell
