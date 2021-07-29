@@ -10,7 +10,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with different IP or Hostname. The session is valid for 15 minutes from last access to the Prism Central.</maml:para>
+      <maml:para>Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with a different IP or Hostname. The session is valid for 15 minutes from the last access to Prism Central.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -41,7 +41,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="C">
           <maml:name>Credential</maml:name>
           <maml:description>
-            <maml:para>Credential in PSCredential type. To create a credential, run `$Cred = New-Object System.Management.Automation.PSCredential(&lt;username&gt;, $Secure)` where &lt;username&gt; is a string and $Secure is a SecureString type of a string. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in raw text string.</maml:para>
+            <maml:para>Credential in PSCredential type. To create a credential, run `$Cred = New-Object System.Management.Automation.PSCredential(&lt;username&gt;, $Secure)` where &lt;username&gt; is a string and $Secure is a SecureString type of a string. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in a raw text string.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
           <dev:type>
@@ -114,7 +114,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="P">
           <maml:name>Password</maml:name>
           <maml:description>
-            <maml:para>Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in raw text string, then use $Secure as the value of this parameter.</maml:para>
+            <maml:para>Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in a  raw text string, then use $Secure as the value of this parameter.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
           <dev:type>
@@ -166,7 +166,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="C">
         <maml:name>Credential</maml:name>
         <maml:description>
-          <maml:para>Credential in PSCredential type. To create a credential, run `$Cred = New-Object System.Management.Automation.PSCredential(&lt;username&gt;, $Secure)` where &lt;username&gt; is a string and $Secure is a SecureString type of a string. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in raw text string.</maml:para>
+          <maml:para>Credential in PSCredential type. To create a credential, run `$Cred = New-Object System.Management.Automation.PSCredential(&lt;username&gt;, $Secure)` where &lt;username&gt; is a string and $Secure is a SecureString type of a string. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in a raw text string.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">PSCredential</command:parameterValue>
         <dev:type>
@@ -190,7 +190,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="P">
         <maml:name>Password</maml:name>
         <maml:description>
-          <maml:para>Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in raw text string, then use $Secure as the value of this parameter.</maml:para>
+          <maml:para>Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString &lt;password&gt; -AsPlainText -Force` where &lt;password&gt; is the password in a  raw text string, then use $Secure as the value of this parameter.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">SecureString</command:parameterValue>
         <dev:type>
@@ -283,9 +283,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts</dev:code>
         <dev:remarks>
-
-          <maml:para>Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignore validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. </maml:para>
-
+          <maml:para>Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignores validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. </maml:para>
           <maml:para>$Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force</maml:para>
           <maml:para>Secure command should be executed before Connect-PrismCentral command. This command can be executed in the same Powershell window.</maml:para>
         </dev:remarks>
@@ -302,7 +300,7 @@
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -UserName admin -AcceptInvalidSSLCerts</dev:code>
         <dev:remarks>
-          <maml:para>Connects to Prism Central IP 10.36.240.21 with user name `admin`. This will prompt for password, so user can type the password to console.</maml:para>
+          <maml:para>Connects to Prism Central IP 10.36.240.21 with user name `admin`. This will prompt for a password, so the user can type the password to the console.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -404,7 +402,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Creates a Nutanix Object. This is used to create a object used as parameters for other commands which requires certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`</maml:para>
+      <maml:para>Creates a Nutanix Object. This is used to create an object used as parameters for other commands which require a certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>

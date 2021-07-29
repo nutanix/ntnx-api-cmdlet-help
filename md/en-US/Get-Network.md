@@ -18,7 +18,7 @@ Get-Network [[-Servers] <System.Collections.Generic.HashSet`1[System.String]>] [
 ```
 
 ## DESCRIPTION
-Displays all networks available for the connected Prism Central. This is typically used to get network UUID to attach to VM.
+Displays all networks available for the connected Prism Central. This is typically used to get network UUID to attach to the VM.
 
 ## EXAMPLES
 

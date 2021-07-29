@@ -6,7 +6,7 @@
       <command:verb>Get</command:verb>
       <command:noun>Cluster</command:noun>
       <maml:description>
-        <maml:para>Displays cluster info registered to the prism central. If multiple prism centrals are connected, all clusters under the connected prism centrals are displayed</maml:para>
+        <maml:para>Displays cluster information registered with the prism central. If multiple prism centrals are connected, all clusters under the connected prism centrals are displayed</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -136,21 +136,21 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Cluster</dev:code>
         <dev:remarks>
-          <maml:para>Displays all the cluster registered for the connected Prism Central.</maml:para>
+          <maml:para>Displays the clusters registered with the Prism Central instance.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>Get-Cluster mycluster</dev:code>
         <dev:remarks>
-          <maml:para>Displays the cluster info of name mycluster</maml:para>
+          <maml:para>Displays the cluster information about the cluster named mycluster</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>Get-Cluster 0005bade-af08-c5ec-0000-000000019dda</dev:code>
         <dev:remarks>
-          <maml:para>Displays the cluster info of the cluster with uuid 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be either cluster name or UUID</maml:para>
+          <maml:para>Displays information about the cluster with UUID 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be a cluster name or UUID</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -1048,7 +1048,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt;  Get-Metric -Server 10.46.28.31 -ClusterName mycluster -Metrics controller_num_iops -StartTimeSecsAgo 600 -EndTimeSecsAgo 0 -IntervalInSecs 60</dev:code>
         <dev:remarks>
-          <maml:para>Displays the metric controller_num_iops from 600 seconds ago till now with 60 seconds of interval from the cluster. To get cluster name use `Get-Cluster` command.</maml:para>
+          <maml:para>Displays the metric controller_num_iops from 600 seconds ago till now with 60 seconds of the interval from the cluster. To get cluster name use `Get-Cluster` command.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -1071,7 +1071,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays all networks available for the connected Prism Central. This is typically used to get network UUID to attach to VM.</maml:para>
+      <maml:para>Displays all networks available for the connected Prism Central. This is typically used to get network UUID to attach to the VM.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1218,7 +1218,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Page</maml:name>
           <maml:description>
-            <maml:para>Number of page to display</maml:para>
+            <maml:para>Number of the page to display</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1257,7 +1257,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Page</maml:name>
         <maml:description>
-          <maml:para>Number of page to display</maml:para>
+          <maml:para>Number of the page to display</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1309,7 +1309,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-StorageContainer</dev:code>
         <dev:remarks>
-          <maml:para>Displays a list of available storage container for the connected Prism Central.</maml:para>
+          <maml:para>Displays a list of available storage containers for the connected Prism Central.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -1325,7 +1325,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays tasks for the connected Prism Central. Typically used to get status of running tasks. To get the task already completed, use `-IncludeCompleted`. To wait until the task is completed, append pipe followed by `Wait-Task`. Default task count value is 20</maml:para>
+      <maml:para>Displays tasks for the connected Prism Central. Typically used to get the status of running tasks. To get the task already completed, use `-IncludeCompleted`. To wait until the task is completed, append a pipe followed by `Wait-Task`. Default task count value is 20</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1483,14 +1483,14 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Task</dev:code>
         <dev:remarks>
-          <maml:para>Displays last 20 task that are running for each connected prism central. If there is no tasks currently running, nothing will be displayed.</maml:para>
+          <maml:para>Displays the last 20 tasks that are running for each connected prism central. If there are no tasks currently running, nothing will be displayed.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Task -IncludeCompleted</dev:code>
         <dev:remarks>
-          <maml:para>Displays last 20 tasks that are completed. If `-Count` is given, displays the number of tasks specified by -Count.</maml:para>
+          <maml:para>Displays the last 20 tasks that are completed. If `-Count` is given, it displays the number of tasks specified by -Count.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2020,7 +2020,7 @@
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM testvm -Contains</dev:code>
         <dev:remarks>
-          <maml:para>Displays all VMs that contains the name as `testvm`.</maml:para>
+          <maml:para>Displays all VMs that contain the name as `testvm`.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -3262,7 +3262,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Image -ImageId $imageUUID | Set-Image -Name NewName | Wait-Task</dev:code>
         <dev:remarks>
-          <maml:para>Changes the name of $imageUUID to NewName then wait for the task is completed. The output of Get-Image will contain the metadata and spec for the image, so the Set-Image will use them for updating the image.</maml:para>
+          <maml:para>Changes the name of $imageUUID to NewName then wait for the task to be completed. The output of Get-Image will contain the metadata and spec for the image, so the Set-Image will use them for updating the image.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -3469,7 +3469,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>VmInfo</maml:name>
           <maml:description>
-            <maml:para>VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Set-VM -Name NewName</maml:para>
+            <maml:para>VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Set-VM -Name NewName</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Info</command:parameterValue>
           <dev:type>
@@ -3580,7 +3580,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>VmInfo</maml:name>
         <maml:description>
-          <maml:para>VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Set-VM -Name NewName</maml:para>
+          <maml:para>VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Set-VM -Name NewName</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Info</command:parameterValue>
         <dev:type>
@@ -3715,7 +3715,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
           <maml:name>VmInfo</maml:name>
           <maml:description>
-            <maml:para>VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Start-VM</maml:para>
+            <maml:para>VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Start-VM</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Info</command:parameterValue>
           <dev:type>
@@ -3754,7 +3754,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
         <maml:name>VmInfo</maml:name>
         <maml:description>
-          <maml:para>VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Start-VM</maml:para>
+          <maml:para>VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Start-VM</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Info</command:parameterValue>
         <dev:type>
@@ -3810,7 +3810,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Start-VM $vmUuid | Wait-Task</dev:code>
         <dev:remarks>
-          <maml:para>Starts the VM then wait for the task completed.</maml:para>
+          <maml:para>Starts the VM then wait for the task to be completed.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -3880,7 +3880,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
           <maml:name>VmInfo</maml:name>
           <maml:description>
-            <maml:para>VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Stop-VM</maml:para>
+            <maml:para>VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Stop-VM</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Info</command:parameterValue>
           <dev:type>
@@ -3919,7 +3919,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="named" aliases="none">
         <maml:name>VmInfo</maml:name>
         <maml:description>
-          <maml:para>VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Stop-VM</maml:para>
+          <maml:para>VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Stop-VM</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Info</command:parameterValue>
         <dev:type>
@@ -3975,7 +3975,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM -PowerState ON | Stop-VM | Wait-Task</dev:code>
         <dev:remarks>
-          <maml:para>Searches for the VM that are powered on then stop those VMs then waits for the task completed.</maml:para>
+          <maml:para>Searches for the VM that is powered ON then stops those VMs then waits for the task completed.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
