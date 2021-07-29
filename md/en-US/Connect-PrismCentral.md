@@ -25,7 +25,7 @@ Connect-PrismCentral [-Server] <String> -UserName <String> -Password <SecureStri
 ```
 
 ## DESCRIPTION
-Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with different IP or Hostname. The session is valid for 15 minutes from last access to the Prism Central.
+Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with a different IP or Hostname. The session is valid for 15 minutes from the last access to Prism Central.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repe
 PS C:\> Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts
 ```
 
-Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignore validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. 
+Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignores validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. 
 
 $Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force
 
@@ -56,7 +56,7 @@ PS C:\> Connect-PrismCentral -Server 10.36.240.21 -UserName admin -AcceptInvalid
 ```
 
  
-Connects to Prism Central IP 10.36.240.21 with user name `admin`. This will prompt for password, so user can type the password to console.
+Connects to Prism Central IP 10.36.240.21 with user name `admin`. This will prompt for a password, so the user can type the password to the console.
 
 ## PARAMETERS
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -Credential
-Credential in PSCredential type. To create a credential, run `$Cred = New-Object System.Management.Automation.PSCredential(<username>, $Secure)` where <username> is a string and $Secure is a SecureString type of a string. To create a secure string, run `$Secure=ConvertTo-SecureString <password> -AsPlainText -Force` where <password> is the password in raw text string.
+Credential in PSCredential type. To create a credential, run `$Cred = New-Object System.Management.Automation.PSCredential(<username>, $Secure)` where <username> is a string and $Secure is a SecureString type of a string. To create a secure string, run `$Secure=ConvertTo-SecureString <password> -AsPlainText -Force` where <password> is the password in a raw text string.
 
 
 ```yaml
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Password
-Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString <password> -AsPlainText -Force` where <password> is the password in raw text string, then use $Secure as the value of this parameter.
+Password for login. To create a secure string, run `$Secure=ConvertTo-SecureString <password> -AsPlainText -Force` where <password> is the password in a  raw text string, then use $Secure as the value of this parameter.
 
 ```yaml
 Type: SecureString

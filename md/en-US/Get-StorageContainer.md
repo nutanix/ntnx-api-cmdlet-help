@@ -27,7 +27,7 @@ Displays storage containers available for the connected Prism Central. Typically
 PS C:\> Get-StorageContainer
 ```
 
-Displays a list of available storage container for the connected Prism Central.
+Displays a list of available storage containers for the connected Prism Central.
 
 ## PARAMETERS
 
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -Page
-Number of page to display
+Number of the page to display
 
 ```yaml
 Type: Int32

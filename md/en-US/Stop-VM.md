@@ -32,7 +32,7 @@ Set the power state off
 PS C:\> Get-VM -PowerState ON | Stop-VM | Wait-Task
 ```
 
-Searches for the VM that are powered on then stop those VMs then waits for the task completed.
+Searches for the VM that is powered ON then stops those VMs then waits for the task completed.
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -VmInfo
 
-VM info object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Stop-VM
+VM information object. Typically this is to be used for pipeline input from `Get-VM`, such as, Get-VM -Uuid $vmUuid | Stop-VM
 
 ```yaml
 Type: Info

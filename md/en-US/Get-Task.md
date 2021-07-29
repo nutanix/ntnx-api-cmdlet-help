@@ -18,8 +18,8 @@ Get-Task [[-TaskId] <String>] [-IncludeCompleted] [-Count <Int32>]
 ```
 
 ## DESCRIPTION
-Displays tasks for the connected Prism Central. Typically used to get status of running tasks. To get the task already completed, use `-IncludeCompleted`.
-To wait until the task is completed, append pipe followed by `Wait-Task`.
+Displays tasks for the connected Prism Central. Typically used to get the status of running tasks. To get the task already completed, use `-IncludeCompleted`.
+To wait until the task is completed, append a pipe followed by `Wait-Task`.
 Default task count value is 20
 
 ## EXAMPLES
@@ -29,14 +29,14 @@ Default task count value is 20
 PS C:\> Get-Task
 ```
 
-Displays last 20 task that are running for each connected prism central. If there is no tasks currently running, nothing will be displayed.
+Displays the last 20 tasks that are running for each connected prism central. If there are no tasks currently running, nothing will be displayed.
 
 ### Example 2
 ```powershell
 PS C:\> Get-Task -IncludeCompleted
 ```
 
-Displays last 20 tasks that are completed. If `-Count` is given, displays the number of tasks specified by -Count.
+Displays the last 20 tasks that are completed. If `-Count` is given, it displays the number of tasks specified by -Count.
 
 ## PARAMETERS
 
