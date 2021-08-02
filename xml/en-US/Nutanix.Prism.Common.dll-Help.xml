@@ -6,7 +6,7 @@
       <command:verb>Connect</command:verb>
       <command:noun>PrismCentral</command:noun>
       <maml:description>
-        <maml:para>Connects to Prism Central</maml:para>
+        <maml:para>Connects to Prism Central.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -284,6 +284,7 @@
         <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts</dev:code>
         <dev:remarks>
           <maml:para>Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignores validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. </maml:para>
+          <maml:para></maml:para>
           <maml:para>$Secure=ConvertTo-SecureString adminpassword -AsPlainText -Force</maml:para>
           <maml:para>Secure command should be executed before Connect-PrismCentral command. This command can be executed in the same Powershell window.</maml:para>
         </dev:remarks>
@@ -312,11 +313,11 @@
       <command:verb>Disconnect</command:verb>
       <command:noun>PrismCentral</command:noun>
       <maml:description>
-        <maml:para>Disconnect from one or all of prism central hosts</maml:para>
+        <maml:para>Disconnect from one or all of Prism Central hosts.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Disconnect from one or all of prism central hosts. use '*' as -Server parameter to disconnect all.</maml:para>
+      <maml:para>Disconnect from one or all of Prism Central hosts. use '*' as -Server parameter to disconnect all.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -324,7 +325,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
           <dev:type>
@@ -339,7 +340,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
         <dev:type>
@@ -386,7 +387,7 @@
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Disconnect-PrismCentral -Servers *</dev:code>
         <dev:remarks>
-          <maml:para>Disconnects from all Prism Central</maml:para>
+          <maml:para>Disconnects from all Prism Central.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -402,7 +403,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Creates a Nutanix Object. This is used to create an object used as parameters for other commands which require a certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`</maml:para>
+      <maml:para>Creates a Nutanix Object. This is used to create an object used as parameters for other commands which require a certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -465,7 +466,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; $boot = New-NutanixObject BootConfig</dev:code>
         <dev:remarks>
-          <maml:para>Creates a BootConfig type of object to be used for creating a VM</maml:para>
+          <maml:para>Creates a BootConfig type of object to be used for creating a VM.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>

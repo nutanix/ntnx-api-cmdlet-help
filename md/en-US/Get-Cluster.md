@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-Cluster
 
 ## SYNOPSIS
-Displays cluster information registered with the prism central. If multiple prism centrals are connected, all clusters under the connected prism centrals are displayed
+Displays information about the clusters that are registered with Prism Central. If the clusters are registered with other Prism Centrak instances, the cmdlet also displays the clusters that are registered with those Prism Central instances.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-Cluster [[-Uuid] <String>] [-Servers <System.Collections.Generic.HashSet`1[S
 ```
 
 ## DESCRIPTION
-Displays Cluster name, UUID and hostname of the connected Prism Central
+Displays cluster name, UUID, and host name of the connected Prism Central instance.
 
 ## EXAMPLES
 
@@ -34,26 +34,26 @@ Displays Cluster name, UUID and hostname of the connected Prism Central
 PS C:\> Get-Cluster
 ```
 
-Displays the clusters registered with the Prism Central instance.
+Lists the clusters registered with the Prism Central instance.
 
 ### Example 2
 ```powershell
 Get-Cluster mycluster
 ```
 
-Displays the cluster information about the cluster named mycluster
+Displays the cluster information about the cluster named mycluster.
 
 ### Example 3
 ```powershell
 Get-Cluster 0005bade-af08-c5ec-0000-000000019dda
 ```
 
-Displays information about the cluster with UUID 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be a cluster name or UUID
+Displays information about the cluster with UUID 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be a cluster name or UUID.
 
 ## PARAMETERS
 
 ### -Name
-Cluster name
+Cluster name.
 
 ```yaml
 Type: String
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uuid
-Cluster UUID
+Cluster UUID.
 
 ```yaml
 Type: String

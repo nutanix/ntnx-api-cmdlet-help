@@ -8,7 +8,7 @@ schema: 2.0.0
 # Disconnect-PrismCentral
 
 ## SYNOPSIS
-Disconnect from one or all of prism central hosts
+Disconnect from one or all of Prism Central hosts.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Disconnect-PrismCentral [-Servers] <String[]> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Disconnect from one or all of prism central hosts. use '*' as -Server parameter to disconnect all.
+Disconnect from one or all of Prism Central hosts. use '*' as -Server parameter to disconnect all.
 
 ## EXAMPLES
 
@@ -33,12 +33,12 @@ Disconnects from Prism Central host 10.46.28.31
 PS C:\> Disconnect-PrismCentral -Servers *
 ```
 
-Disconnects from all Prism Central
+Disconnects from all Prism Central.
 
 ## PARAMETERS
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: String[]

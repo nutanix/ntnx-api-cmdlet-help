@@ -8,7 +8,7 @@ schema: 2.0.0
 # Connect-PrismCentral
 
 ## SYNOPSIS
-Connects to Prism Central
+Connects to Prism Central.
 
 ## SYNTAX
 

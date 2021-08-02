@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-VM
 
 ## SYNOPSIS
-Removes a VM
+Removes a VM.
 
 ## SYNTAX
 
@@ -34,12 +34,12 @@ Find the UUID from connected Prism Central and removes it.
 PS C:\> Remove-VM -Server 10.46.28.27 5b25f68b-fe73-4cdc-88bf-a5485dff1627
 ```
 
-Find the UUID from Prism Central 10.46.28.27 then removes it. It will remove only if the VM is in the Prism Central 10.46.28.27
+Find the UUID from Prism Central 10.46.28.27 then removes it. It will remove only if the VM is in the Prism Central 10.46.28.27.
 
 ## PARAMETERS
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uuid
-UUID of the VM
+UUID of the VM.
 
 ```yaml
 Type: String

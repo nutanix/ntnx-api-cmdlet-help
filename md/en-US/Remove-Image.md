@@ -32,7 +32,7 @@ Removes the image with UUID 25a2a7dc-cf26-4cb7-8bfb-f103fdfcd2d1 and wait for th
 ## PARAMETERS
 
 ### -ImageId
-Image UUID
+Image UUID.
 
 ```yaml
 Type: String
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]

@@ -17,7 +17,7 @@ New-NutanixObject [-Name] <String> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Creates a Nutanix Object. This is used to create an object used as parameters for other commands which require a certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`
+Creates a Nutanix Object. This is used to create an object used as parameters for other commands which require a certain Nutanix object. For example, to create VM, BootConfig can be created by `$boot = New-NutanixObject BootConfig`.
 
 ## EXAMPLES
 
@@ -26,7 +26,7 @@ Creates a Nutanix Object. This is used to create an object used as parameters fo
 PS C:\> $boot = New-NutanixObject BootConfig
 ```
 
-Creates a BootConfig type of object to be used for creating a VM
+Creates a BootConfig type of object to be used for creating a VM.
 
 ## PARAMETERS
 

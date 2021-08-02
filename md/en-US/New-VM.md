@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-VM
 
 ## SYNOPSIS
-Creates a New VM
+Creates a New VM.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-VM -ClusterName <String> -Name <String> [-Description <String>] [-GuestOS <S
 ```
 
 ## DESCRIPTION
-Creates a New VM
+Creates a New VM.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterName
-Name of the Cluster
+Name of the Cluster.
 
 ```yaml
 Type: String
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterUUID
-UUID of the Cluster
+UUID of the Cluster.
 
 ```yaml
 Type: String
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the VM
+Description of the VM.
 
 ```yaml
 Type: String
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemoryMb
-Memory size in Mb
+Memory size in Mb.
 
 ```yaml
 Type: Int64
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of the VM
+Name of the VM.
 
 ```yaml
 Type: String
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumCoresPerVcpu
-Number of cores per Vcpu
+Number of cores per Vcpu.
 
 ```yaml
 Type: Int64
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumVcpus
-Number of Vcpu
+Number of Vcpu.
 
 ```yaml
 Type: Int64
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmDisks
-List of disks cloned and attached
+List of disks cloned and attached.
 
 ```yaml
 Type: VMDiskDTO[]
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -VmNics
-List of networks to be connected
+List of networks to be connected.
 
 ```yaml
 Type: VMNicSpecDTO[]

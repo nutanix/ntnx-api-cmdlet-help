@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-Image
 
 ## SYNOPSIS
-Creates a new image
+Creates a new image.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-Image -ClusterName <String> -Name <String> -ImageType <String> -SourceUri <S
 ```
 
 ## DESCRIPTION
-Creates a new image
+Creates a new image.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ PS C:\> New-Image -Name testimage1 -ClusterName mycluster -ImageType DISK_IMAGE 
 ```
 
 Creates a new image in cluster `mycluster`
--SourceUri is the source of the image from where the image should be picked to create New-Image
+-SourceUri is the source of the image from where the image should be picked to create New-Image.
 
 ### Example 2
 ```powershell
@@ -51,7 +51,7 @@ Creates a new image on Prism Central 10.46.28.27. Prism Central will automatical
 ## PARAMETERS
 
 ### -ClusterName
-Cluster name to create the image in
+Cluster name to create the image in.
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterUuid
-Cluster UUID to create the image in
+Cluster UUID to create the image in.
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageType
-Image type. It can be either DISK_IMAGE or ISO_IMAGE
+Image type. It can be either DISK_IMAGE or ISO_IMAGE.
 
 ```yaml
 Type: String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of the image
+Name of the image.
 
 ```yaml
 Type: String
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -SourceUri
-Source Uri of the image
+Source Uri of the image.
 
 ```yaml
 Type: String
