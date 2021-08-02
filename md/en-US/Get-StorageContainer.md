@@ -32,7 +32,7 @@ Displays a list of available storage containers for the connected Prism Central.
 ## PARAMETERS
 
 ### -Count
-Number of storage containers to display
+Number of storage containers to display.
 
 ```yaml
 Type: Int32
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -Page
-Number of the page to display
+Number of the page to display.
 
 ```yaml
 Type: Int32
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]

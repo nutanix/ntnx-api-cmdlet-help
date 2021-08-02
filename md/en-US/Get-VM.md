@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-VM
 
 ## SYNOPSIS
-Displays a list of VM
+Displays a list of VM.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Get-VM [-Count <Int32>] [-Page <Int32>] [-Uuid <String>]
 ```
 
 ## DESCRIPTION
-Displays a list of VM for the connected Prism Central
+Displays a list of VM for the connected Prism Central.
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ Displays a list of VM for the connected Prism Central
 PS C:\> Get-VM
 ```
 
-Displays all VMs for the connected Prism Central
+Displays all VMs for the connected Prism Central.
 
 ### Example 2
 ```powershell
@@ -94,7 +94,7 @@ Displays all VMs with power state is ON.
 PS C:\> Get-VM -Count 10 -Page 2
 ```
 
-Displays 10 VMs from the second page
+Displays 10 VMs from the second page.
 
 ## PARAMETERS
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Contains
-Displays VMs that contains given name
+Displays VMs that contains given name.
 
 ```yaml
 Type: SwitchParameter
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Count
-Number of VMs to display
+Number of VMs to display.
 
 ```yaml
 Type: Int32
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndsWith
-Displays VMs with the names ending with the given name
+Displays VMs with the names ending with the given name.
 
 ```yaml
 Type: SwitchParameter
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Displays one or more VMs with the given name
+Displays one or more VMs with the given name.
 
 ```yaml
 Type: String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -Page
-Page of the list
+Page of the list.
 
 ```yaml
 Type: Int32
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 ```
 
 ### -PowerState
-Displays the VMs with given power state. Available state is ON or OFF
+Displays the VMs with given power state. Available state is ON or OFF.
 
 ```yaml
 Type: String
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartsWith
-Displays VMs with the names starting with the given name
+Displays VMs with the names starting with the given name.
 
 ```yaml
 Type: SwitchParameter
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uuid
-UUID of the VM
+UUID of the VM.
 
 ```yaml
 Type: String

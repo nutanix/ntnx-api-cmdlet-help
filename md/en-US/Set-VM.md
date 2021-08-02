@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-VM
 
 ## SYNOPSIS
-Updates VM
+Updates VM.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the VM
+Description of the VM.
 
 ```yaml
 Type: String
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemoryMb
-Memory size in Mb
+Memory size in Mb.
 
 ```yaml
 Type: Int64
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of the VM
+Name of the VM.
 
 ```yaml
 Type: String
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 ```
 
 ### -NumCoresPerVcpu
-Number of cores per Vcpu
+Number of cores per Vcpu.
 
 ```yaml
 Type: Int64
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### -NumVcpus
 
-Number of Vcpu
+Number of Vcpu.
 
 ```yaml
 Type: Int64
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uuid
-UUID of the VM
+UUID of the VM.
 
 ```yaml
 Type: String

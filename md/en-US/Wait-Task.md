@@ -8,7 +8,7 @@ schema: 2.0.0
 # Wait-Task
 
 ## SYNOPSIS
-Waits until all tasks are finished or timeout
+Waits until all tasks are finished or timeout.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Stops the VM and waits for the task to be completed. If the -Timeoutseconds is n
 ## PARAMETERS
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -TaskIds
-Task UUID
+Task UUID.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]

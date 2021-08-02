@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-VM
 
 ## SYNOPSIS
-Power off the VM
+Power off the VM.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Stop-VM -VmInfo <Info> [-Servers <System.Collections.Generic.HashSet`1[System.St
 ```
 
 ## DESCRIPTION
-Set the power state off
+Set the power state off.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Searches for the VM that is powered ON then stops those VMs then waits for the t
 ## PARAMETERS
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uuid
-UUID of the VM
+UUID of the VM.
 
 ```yaml
 Type: String

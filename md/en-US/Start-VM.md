@@ -8,7 +8,7 @@ schema: 2.0.0
 # Start-VM
 
 ## SYNOPSIS
-Power on the VM
+Power on the VM.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Starts the VM returned from Get-VM command then wait for the task completed.
 ## PARAMETERS
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -Uuid
-UUID of the VM
+UUID of the VM.
 
 ```yaml
 Type: String
