@@ -32,7 +32,7 @@ Changes the name of $imageUUID to NewName then wait for the task to be completed
 ## PARAMETERS
 
 ### -Description
-Description of the image
+Description of the image.
 
 ```yaml
 Type: String
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -ImageType
-Type of the image. It can be either DISK_IMAGE or ISO_IMAGE
+Type of the image. It can be either DISK_IMAGE or ISO_IMAGE.
 
 ```yaml
 Type: String
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-Name of the image
+Name of the image.
 
 ```yaml
 Type: String
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]

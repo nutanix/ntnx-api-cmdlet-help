@@ -6,11 +6,11 @@
       <command:verb>Get</command:verb>
       <command:noun>Cluster</command:noun>
       <maml:description>
-        <maml:para>Displays cluster information registered with the prism central. If multiple prism centrals are connected, all clusters under the connected prism centrals are displayed</maml:para>
+        <maml:para>Displays information about the clusters that are registered with Prism Central. If the clusters are registered with other Prism Centrak instances, the cmdlet also displays the clusters that are registered with those Prism Central instances.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays Cluster name, UUID and hostname of the connected Prism Central</maml:para>
+      <maml:para>Displays cluster name, UUID, and host name of the connected Prism Central instance.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -18,7 +18,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Cluster name</maml:para>
+            <maml:para>Cluster name.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -30,7 +30,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -45,7 +45,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>Uuid</maml:name>
           <maml:description>
-            <maml:para>Cluster UUID</maml:para>
+            <maml:para>Cluster UUID.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -57,7 +57,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -72,7 +72,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Cluster name</maml:para>
+          <maml:para>Cluster name.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -84,7 +84,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -96,7 +96,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>Uuid</maml:name>
         <maml:description>
-          <maml:para>Cluster UUID</maml:para>
+          <maml:para>Cluster UUID.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -136,21 +136,21 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Cluster</dev:code>
         <dev:remarks>
-          <maml:para>Displays the clusters registered with the Prism Central instance.</maml:para>
+          <maml:para>Lists the clusters registered with the Prism Central instance.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>Get-Cluster mycluster</dev:code>
         <dev:remarks>
-          <maml:para>Displays the cluster information about the cluster named mycluster</maml:para>
+          <maml:para>Displays the cluster information about the cluster named mycluster.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
         <dev:code>Get-Cluster 0005bade-af08-c5ec-0000-000000019dda</dev:code>
         <dev:remarks>
-          <maml:para>Displays information about the cluster with UUID 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be a cluster name or UUID</maml:para>
+          <maml:para>Displays information about the cluster with UUID 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be a cluster name or UUID.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -162,7 +162,7 @@
       <command:verb>Get</command:verb>
       <command:noun>Image</command:noun>
       <maml:description>
-        <maml:para>Displays the image information of specified UUID.</maml:para>
+        <maml:para>Accepts the UUID of an image and displays information about the image.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -174,7 +174,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>ImageId</maml:name>
           <maml:description>
-            <maml:para>Image UUID</maml:para>
+            <maml:para>Image UUID.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -186,7 +186,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>IncludeVmDiskId</maml:name>
           <maml:description>
-            <maml:para>Displays vm_disk_id which can be used for cloning VM. For example, you can create VMDiskAddress object then assign vm_disk_id to vmdisk_uuid property of VMDiskAddress</maml:para>
+            <maml:para>Displays vm_disk_id which can be used for cloning VM. For example, you can create VMDiskAddress object then assign vm_disk_id to vmdisk_uuid property of VMDiskAddress.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -197,7 +197,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -212,7 +212,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>ImageId</maml:name>
         <maml:description>
-          <maml:para>Image UUID</maml:para>
+          <maml:para>Image UUID.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -224,7 +224,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>IncludeVmDiskId</maml:name>
         <maml:description>
-          <maml:para>Displays vm_disk_id which can be used for cloning VM. For example, you can create VMDiskAddress object then assign vm_disk_id to vmdisk_uuid property of VMDiskAddress</maml:para>
+          <maml:para>Displays vm_disk_id which can be used for cloning VM. For example, you can create VMDiskAddress object then assign vm_disk_id to vmdisk_uuid property of VMDiskAddress.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -236,7 +236,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -284,14 +284,14 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425</dev:code>
         <dev:remarks>
-          <maml:para>Displays the image information of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425</maml:para>
+          <maml:para>Displays the image information of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425 | ConvertTo-Json -Depth 3</dev:code>
         <dev:remarks>
-          <maml:para>Displays more details about the image in JSON format</maml:para>
+          <maml:para>Displays more details about the image in JSON format.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -307,7 +307,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays a metric of the cluster for given time period. To list all available metrics, try `Get-Help Get-Metric -Parameter Metrics`</maml:para>
+      <maml:para>Displays a metric of the cluster for given time period. To list all available metrics, try `Get-Help Get-Metric -Parameter Metrics`.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -315,7 +315,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>ClusterName</maml:name>
           <maml:description>
-            <maml:para>Cluster Name</maml:para>
+            <maml:para>Cluster Name.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -408,7 +408,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>EndTimeSecsAgo</maml:name>
           <maml:description>
-            <maml:para>End time of the metric</maml:para>
+            <maml:para>End time of the metric.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -420,7 +420,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>IntervalInSecs</maml:name>
           <maml:description>
-            <maml:para>Interval of the metric in range of 1 to 300</maml:para>
+            <maml:para>Interval of the metric in range of 1 to 300.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -432,7 +432,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -444,7 +444,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>StartTimeSecsAgo</maml:name>
           <maml:description>
-            <maml:para>Start time of the metric</maml:para>
+            <maml:para>Start time of the metric.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -459,7 +459,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>ClusterName</maml:name>
           <maml:description>
-            <maml:para>Cluster Name</maml:para>
+            <maml:para>Cluster Name.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -552,7 +552,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>IntervalInSecs</maml:name>
           <maml:description>
-            <maml:para>Interval of the metric in range of 1 to 300</maml:para>
+            <maml:para>Interval of the metric in range of 1 to 300.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -564,7 +564,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -579,7 +579,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>ClusterUuid</maml:name>
           <maml:description>
-            <maml:para>Cluster UUID</maml:para>
+            <maml:para>Cluster UUID.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -672,7 +672,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>EndTimeSecsAgo</maml:name>
           <maml:description>
-            <maml:para>End time of the metric</maml:para>
+            <maml:para>End time of the metric.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -684,7 +684,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>IntervalInSecs</maml:name>
           <maml:description>
-            <maml:para>Interval of the metric in range of 1 to 300</maml:para>
+            <maml:para>Interval of the metric in range of 1 to 300.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -696,7 +696,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -708,7 +708,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>StartTimeSecsAgo</maml:name>
           <maml:description>
-            <maml:para>Start time of the metric</maml:para>
+            <maml:para>Start time of the metric.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -723,7 +723,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>ClusterUuid</maml:name>
           <maml:description>
-            <maml:para>Cluster UUID</maml:para>
+            <maml:para>Cluster UUID.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -816,7 +816,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>IntervalInSecs</maml:name>
           <maml:description>
-            <maml:para>Interval of the metric in range of 1 to 300</maml:para>
+            <maml:para>Interval of the metric in range of 1 to 300.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -828,7 +828,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -843,7 +843,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
         <maml:name>ClusterName</maml:name>
         <maml:description>
-          <maml:para>Cluster Name</maml:para>
+          <maml:para>Cluster Name.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -855,7 +855,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
         <maml:name>ClusterUuid</maml:name>
         <maml:description>
-          <maml:para>Cluster UUID</maml:para>
+          <maml:para>Cluster UUID.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -867,7 +867,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>EndTimeSecsAgo</maml:name>
         <maml:description>
-          <maml:para>End time of the metric</maml:para>
+          <maml:para>End time of the metric.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
         <dev:type>
@@ -879,7 +879,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>IntervalInSecs</maml:name>
         <maml:description>
-          <maml:para>Interval of the metric in range of 1 to 300</maml:para>
+          <maml:para>Interval of the metric in range of 1 to 300.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -972,7 +972,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -984,7 +984,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>StartTimeSecsAgo</maml:name>
         <maml:description>
-          <maml:para>Start time of the metric</maml:para>
+          <maml:para>Start time of the metric.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
         <dev:type>
@@ -1055,7 +1055,7 @@
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>PS C:\&gt;  Get-Help Get-Metric -Parameter Metrics</dev:code>
         <dev:remarks>
-          <maml:para>Displays all available metrics names</maml:para>
+          <maml:para>Displays all available metrics names.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -1079,7 +1079,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -1091,7 +1091,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Count</maml:name>
           <maml:description>
-            <maml:para>Number of subnet to display</maml:para>
+            <maml:para>Number of subnet to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1103,7 +1103,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Page</maml:name>
           <maml:description>
-            <maml:para>Number of page to display</maml:para>
+            <maml:para>Number of page to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1118,7 +1118,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Count</maml:name>
         <maml:description>
-          <maml:para>Number of subnet to display</maml:para>
+          <maml:para>Number of subnet to display.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1130,7 +1130,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Page</maml:name>
         <maml:description>
-          <maml:para>Number of page to display</maml:para>
+          <maml:para>Number of page to display.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1142,7 +1142,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -1206,7 +1206,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Count</maml:name>
           <maml:description>
-            <maml:para>Number of storage containers to display</maml:para>
+            <maml:para>Number of storage containers to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1218,7 +1218,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Page</maml:name>
           <maml:description>
-            <maml:para>Number of the page to display</maml:para>
+            <maml:para>Number of the page to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1230,7 +1230,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -1245,7 +1245,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Count</maml:name>
         <maml:description>
-          <maml:para>Number of storage containers to display</maml:para>
+          <maml:para>Number of storage containers to display.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1257,7 +1257,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Page</maml:name>
         <maml:description>
-          <maml:para>Number of the page to display</maml:para>
+          <maml:para>Number of the page to display.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1269,7 +1269,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -1483,7 +1483,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-Task</dev:code>
         <dev:remarks>
-          <maml:para>Displays the last 20 tasks that are running for each connected prism central. If there are no tasks currently running, nothing will be displayed.</maml:para>
+          <maml:para>Displays the last 20 tasks that are running for each connected Prism Central. If there are no tasks currently running, nothing will be displayed.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -1502,11 +1502,11 @@
       <command:verb>Get</command:verb>
       <command:noun>VM</command:noun>
       <maml:description>
-        <maml:para>Displays a list of VM</maml:para>
+        <maml:para>Displays a list of VM.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Displays a list of VM for the connected Prism Central</maml:para>
+      <maml:para>Displays a list of VM for the connected Prism Central.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -1514,7 +1514,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Displays one or more VMs with the given name</maml:para>
+            <maml:para>Displays one or more VMs with the given name.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -1538,7 +1538,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Contains</maml:name>
           <maml:description>
-            <maml:para>Displays VMs that contains given name</maml:para>
+            <maml:para>Displays VMs that contains given name.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -1549,7 +1549,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Count</maml:name>
           <maml:description>
-            <maml:para>Number of VMs to display</maml:para>
+            <maml:para>Number of VMs to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1561,7 +1561,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Page</maml:name>
           <maml:description>
-            <maml:para>Page of the list</maml:para>
+            <maml:para>Page of the list.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1573,7 +1573,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -1588,7 +1588,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Displays one or more VMs with the given name</maml:para>
+            <maml:para>Displays one or more VMs with the given name.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -1612,7 +1612,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Count</maml:name>
           <maml:description>
-            <maml:para>Number of VMs to display</maml:para>
+            <maml:para>Number of VMs to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1624,7 +1624,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Page</maml:name>
           <maml:description>
-            <maml:para>Page of the list</maml:para>
+            <maml:para>Page of the list.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1636,7 +1636,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -1648,7 +1648,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>StartsWith</maml:name>
           <maml:description>
-            <maml:para>Displays VMs with the names starting with the given name</maml:para>
+            <maml:para>Displays VMs with the names starting with the given name.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -1662,7 +1662,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Displays one or more VMs with the given name</maml:para>
+            <maml:para>Displays one or more VMs with the given name.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -1686,7 +1686,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Count</maml:name>
           <maml:description>
-            <maml:para>Number of VMs to display</maml:para>
+            <maml:para>Number of VMs to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1698,7 +1698,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>EndsWith</maml:name>
           <maml:description>
-            <maml:para>Displays VMs with the names ending with the given name</maml:para>
+            <maml:para>Displays VMs with the names ending with the given name.</maml:para>
           </maml:description>
           <dev:type>
             <maml:name>SwitchParameter</maml:name>
@@ -1709,7 +1709,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Page</maml:name>
           <maml:description>
-            <maml:para>Page of the list</maml:para>
+            <maml:para>Page of the list.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1721,7 +1721,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -1736,7 +1736,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Count</maml:name>
           <maml:description>
-            <maml:para>Number of VMs to display</maml:para>
+            <maml:para>Number of VMs to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1748,7 +1748,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Page</maml:name>
           <maml:description>
-            <maml:para>Page of the list</maml:para>
+            <maml:para>Page of the list.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1760,7 +1760,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>PowerState</maml:name>
           <maml:description>
-            <maml:para>Displays the VMs with given power state. Available state is ON or OFF</maml:para>
+            <maml:para>Displays the VMs with given power state. Available state is ON or OFF.</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">ON</command:parameterValue>
@@ -1776,7 +1776,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -1791,7 +1791,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Count</maml:name>
           <maml:description>
-            <maml:para>Number of VMs to display</maml:para>
+            <maml:para>Number of VMs to display.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1803,7 +1803,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Page</maml:name>
           <maml:description>
-            <maml:para>Page of the list</maml:para>
+            <maml:para>Page of the list.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
           <dev:type>
@@ -1815,7 +1815,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -1827,7 +1827,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Uuid</maml:name>
           <maml:description>
-            <maml:para>UUID of the VM</maml:para>
+            <maml:para>UUID of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -1854,7 +1854,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Contains</maml:name>
         <maml:description>
-          <maml:para>Displays VMs that contains given name</maml:para>
+          <maml:para>Displays VMs that contains given name.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -1866,7 +1866,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Count</maml:name>
         <maml:description>
-          <maml:para>Number of VMs to display</maml:para>
+          <maml:para>Number of VMs to display.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1878,7 +1878,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>EndsWith</maml:name>
         <maml:description>
-          <maml:para>Displays VMs with the names ending with the given name</maml:para>
+          <maml:para>Displays VMs with the names ending with the given name.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -1890,7 +1890,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Displays one or more VMs with the given name</maml:para>
+          <maml:para>Displays one or more VMs with the given name.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -1902,7 +1902,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Page</maml:name>
         <maml:description>
-          <maml:para>Page of the list</maml:para>
+          <maml:para>Page of the list.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int32</command:parameterValue>
         <dev:type>
@@ -1914,7 +1914,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>PowerState</maml:name>
         <maml:description>
-          <maml:para>Displays the VMs with given power state. Available state is ON or OFF</maml:para>
+          <maml:para>Displays the VMs with given power state. Available state is ON or OFF.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -1926,7 +1926,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -1938,7 +1938,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>StartsWith</maml:name>
         <maml:description>
-          <maml:para>Displays VMs with the names starting with the given name</maml:para>
+          <maml:para>Displays VMs with the names starting with the given name.</maml:para>
         </maml:description>
         <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
         <dev:type>
@@ -1950,7 +1950,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Uuid</maml:name>
         <maml:description>
-          <maml:para>UUID of the VM</maml:para>
+          <maml:para>UUID of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2006,7 +2006,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM</dev:code>
         <dev:remarks>
-          <maml:para>Displays all VMs for the connected Prism Central</maml:para>
+          <maml:para>Displays all VMs for the connected Prism Central.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -2048,7 +2048,7 @@
         <maml:title>-------------------------- Example 7 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Get-VM -Count 10 -Page 2</dev:code>
         <dev:remarks>
-          <maml:para>Displays 10 VMs from the second page</maml:para>
+          <maml:para>Displays 10 VMs from the second page.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -2060,11 +2060,11 @@
       <command:verb>New</command:verb>
       <command:noun>Image</command:noun>
       <maml:description>
-        <maml:para>Creates a new image</maml:para>
+        <maml:para>Creates a new image.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Creates a new image</maml:para>
+      <maml:para>Creates a new image.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2072,7 +2072,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ClusterName</maml:name>
           <maml:description>
-            <maml:para>Cluster name to create the image in</maml:para>
+            <maml:para>Cluster name to create the image in.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2084,7 +2084,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ImageType</maml:name>
           <maml:description>
-            <maml:para>Image type. It can be either DISK_IMAGE or ISO_IMAGE</maml:para>
+            <maml:para>Image type. It can be either DISK_IMAGE or ISO_IMAGE.</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">DISK_IMAGE</command:parameterValue>
@@ -2100,7 +2100,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the image</maml:para>
+            <maml:para>Name of the image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2112,7 +2112,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>SourceUri</maml:name>
           <maml:description>
-            <maml:para>Source Uri of the image</maml:para>
+            <maml:para>Source Uri of the image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2127,7 +2127,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ClusterUuid</maml:name>
           <maml:description>
-            <maml:para>Cluster UUID to create the image in</maml:para>
+            <maml:para>Cluster UUID to create the image in.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2139,7 +2139,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ImageType</maml:name>
           <maml:description>
-            <maml:para>Image type. It can be either DISK_IMAGE or ISO_IMAGE</maml:para>
+            <maml:para>Image type. It can be either DISK_IMAGE or ISO_IMAGE.</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">DISK_IMAGE</command:parameterValue>
@@ -2155,7 +2155,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the image</maml:para>
+            <maml:para>Name of the image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2167,7 +2167,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>SourceUri</maml:name>
           <maml:description>
-            <maml:para>Source Uri of the image</maml:para>
+            <maml:para>Source Uri of the image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2182,7 +2182,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ImageType</maml:name>
           <maml:description>
-            <maml:para>Image type. It can be either DISK_IMAGE or ISO_IMAGE</maml:para>
+            <maml:para>Image type. It can be either DISK_IMAGE or ISO_IMAGE.</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">DISK_IMAGE</command:parameterValue>
@@ -2198,7 +2198,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the image</maml:para>
+            <maml:para>Name of the image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2210,7 +2210,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -2222,7 +2222,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>SourceUri</maml:name>
           <maml:description>
-            <maml:para>Source Uri of the image</maml:para>
+            <maml:para>Source Uri of the image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2237,7 +2237,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>ClusterName</maml:name>
         <maml:description>
-          <maml:para>Cluster name to create the image in</maml:para>
+          <maml:para>Cluster name to create the image in.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2249,7 +2249,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>ClusterUuid</maml:name>
         <maml:description>
-          <maml:para>Cluster UUID to create the image in</maml:para>
+          <maml:para>Cluster UUID to create the image in.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2261,7 +2261,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>ImageType</maml:name>
         <maml:description>
-          <maml:para>Image type. It can be either DISK_IMAGE or ISO_IMAGE</maml:para>
+          <maml:para>Image type. It can be either DISK_IMAGE or ISO_IMAGE.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2273,7 +2273,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Name of the image</maml:para>
+          <maml:para>Name of the image.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2285,7 +2285,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -2297,7 +2297,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>SourceUri</maml:name>
         <maml:description>
-          <maml:para>Source Uri of the image</maml:para>
+          <maml:para>Source Uri of the image.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2345,7 +2345,7 @@
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
         <dev:code>PS C:\&gt; New-Image -Name testimage1 -ClusterName mycluster -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2</dev:code>
         <dev:remarks>
-          <maml:para>Creates a new image in cluster `mycluster` -SourceUri is the source of the image from where the image should be picked to create New-Image</maml:para>
+          <maml:para>Creates a new image in cluster `mycluster` -SourceUri is the source of the image from where the image should be picked to create New-Image.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
@@ -2364,11 +2364,11 @@
       <command:verb>New</command:verb>
       <command:noun>VM</command:noun>
       <maml:description>
-        <maml:para>Creates a New VM</maml:para>
+        <maml:para>Creates a New VM.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Creates a New VM</maml:para>
+      <maml:para>Creates a New VM.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -2388,7 +2388,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ClusterName</maml:name>
           <maml:description>
-            <maml:para>Name of the Cluster</maml:para>
+            <maml:para>Name of the Cluster.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2400,7 +2400,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the VM</maml:para>
+            <maml:para>Description of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2424,7 +2424,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>MemoryMb</maml:name>
           <maml:description>
-            <maml:para>Memory size in Mb</maml:para>
+            <maml:para>Memory size in Mb.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -2436,7 +2436,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the VM</maml:para>
+            <maml:para>Name of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2448,7 +2448,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumCoresPerVcpu</maml:name>
           <maml:description>
-            <maml:para>Number of cores per Vcpu</maml:para>
+            <maml:para>Number of cores per Vcpu.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -2460,7 +2460,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumVcpus</maml:name>
           <maml:description>
-            <maml:para>Number of Vcpu</maml:para>
+            <maml:para>Number of Vcpu.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -2472,7 +2472,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>VmDisks</maml:name>
           <maml:description>
-            <maml:para>List of disks cloned and attached</maml:para>
+            <maml:para>List of disks cloned and attached.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">VMDiskDTO[]</command:parameterValue>
           <dev:type>
@@ -2484,7 +2484,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>VmNics</maml:name>
           <maml:description>
-            <maml:para>List of networks to be connected</maml:para>
+            <maml:para>List of networks to be connected.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">VMNicSpecDTO[]</command:parameterValue>
           <dev:type>
@@ -2511,7 +2511,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>ClusterUUID</maml:name>
           <maml:description>
-            <maml:para>UUID of the Cluster</maml:para>
+            <maml:para>UUID of the Cluster.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2523,7 +2523,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the VM</maml:para>
+            <maml:para>Description of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2547,7 +2547,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>MemoryMb</maml:name>
           <maml:description>
-            <maml:para>Memory size in Mb</maml:para>
+            <maml:para>Memory size in Mb.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -2559,7 +2559,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the VM</maml:para>
+            <maml:para>Name of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2571,7 +2571,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumCoresPerVcpu</maml:name>
           <maml:description>
-            <maml:para>Number of cores per Vcpu</maml:para>
+            <maml:para>Number of cores per Vcpu.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -2583,7 +2583,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumVcpus</maml:name>
           <maml:description>
-            <maml:para>Number of Vcpu</maml:para>
+            <maml:para>Number of Vcpu.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -2595,7 +2595,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>VmDisks</maml:name>
           <maml:description>
-            <maml:para>List of disks cloned and attached</maml:para>
+            <maml:para>List of disks cloned and attached.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">VMDiskDTO[]</command:parameterValue>
           <dev:type>
@@ -2607,7 +2607,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>VmNics</maml:name>
           <maml:description>
-            <maml:para>List of networks to be connected</maml:para>
+            <maml:para>List of networks to be connected.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">VMNicSpecDTO[]</command:parameterValue>
           <dev:type>
@@ -2634,7 +2634,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>ClusterName</maml:name>
         <maml:description>
-          <maml:para>Name of the Cluster</maml:para>
+          <maml:para>Name of the Cluster.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2646,7 +2646,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>ClusterUUID</maml:name>
         <maml:description>
-          <maml:para>UUID of the Cluster</maml:para>
+          <maml:para>UUID of the Cluster.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2658,7 +2658,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Description</maml:name>
         <maml:description>
-          <maml:para>Description of the VM</maml:para>
+          <maml:para>Description of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2682,7 +2682,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>MemoryMb</maml:name>
         <maml:description>
-          <maml:para>Memory size in Mb</maml:para>
+          <maml:para>Memory size in Mb.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
         <dev:type>
@@ -2694,7 +2694,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Name of the VM</maml:para>
+          <maml:para>Name of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2706,7 +2706,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>NumCoresPerVcpu</maml:name>
         <maml:description>
-          <maml:para>Number of cores per Vcpu</maml:para>
+          <maml:para>Number of cores per Vcpu.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
         <dev:type>
@@ -2718,7 +2718,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>NumVcpus</maml:name>
         <maml:description>
-          <maml:para>Number of Vcpu</maml:para>
+          <maml:para>Number of Vcpu.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
         <dev:type>
@@ -2730,7 +2730,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>VmDisks</maml:name>
         <maml:description>
-          <maml:para>List of disks cloned and attached</maml:para>
+          <maml:para>List of disks cloned and attached.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">VMDiskDTO[]</command:parameterValue>
         <dev:type>
@@ -2742,7 +2742,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>VmNics</maml:name>
         <maml:description>
-          <maml:para>List of networks to be connected</maml:para>
+          <maml:para>List of networks to be connected.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">VMNicSpecDTO[]</command:parameterValue>
         <dev:type>
@@ -2838,7 +2838,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>ImageId</maml:name>
           <maml:description>
-            <maml:para>Image UUID</maml:para>
+            <maml:para>Image UUID.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2850,7 +2850,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -2865,7 +2865,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
         <maml:name>ImageId</maml:name>
         <maml:description>
-          <maml:para>Image UUID</maml:para>
+          <maml:para>Image UUID.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2877,7 +2877,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -2937,7 +2937,7 @@
       <command:verb>Remove</command:verb>
       <command:noun>VM</command:noun>
       <maml:description>
-        <maml:para>Removes a VM</maml:para>
+        <maml:para>Removes a VM.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -2949,7 +2949,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>Uuid</maml:name>
           <maml:description>
-            <maml:para>UUID of the VM</maml:para>
+            <maml:para>UUID of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2961,7 +2961,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -2976,7 +2976,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -2988,7 +2988,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
         <maml:name>Uuid</maml:name>
         <maml:description>
-          <maml:para>UUID of the VM</maml:para>
+          <maml:para>UUID of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3043,7 +3043,7 @@
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
         <dev:code>PS C:\&gt; Remove-VM -Server 10.46.28.27 5b25f68b-fe73-4cdc-88bf-a5485dff1627</dev:code>
         <dev:remarks>
-          <maml:para>Find the UUID from Prism Central 10.46.28.27 then removes it. It will remove only if the VM is in the Prism Central 10.46.28.27</maml:para>
+          <maml:para>Find the UUID from Prism Central 10.46.28.27 then removes it. It will remove only if the VM is in the Prism Central 10.46.28.27.</maml:para>
         </dev:remarks>
       </command:example>
     </command:examples>
@@ -3067,7 +3067,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the image</maml:para>
+            <maml:para>Description of the image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3079,7 +3079,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>ImageType</maml:name>
           <maml:description>
-            <maml:para>Type of the image. It can be either DISK_IMAGE or ISO_IMAGE</maml:para>
+            <maml:para>Type of the image. It can be either DISK_IMAGE or ISO_IMAGE.</maml:para>
           </maml:description>
           <command:parameterValueGroup>
             <command:parameterValue required="false" command:variableLength="false">DISK_IMAGE</command:parameterValue>
@@ -3107,7 +3107,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the image</maml:para>
+            <maml:para>Name of the image.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3119,7 +3119,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -3146,7 +3146,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Description</maml:name>
         <maml:description>
-          <maml:para>Description of the image</maml:para>
+          <maml:para>Description of the image.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3158,7 +3158,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>ImageType</maml:name>
         <maml:description>
-          <maml:para>Type of the image. It can be either DISK_IMAGE or ISO_IMAGE</maml:para>
+          <maml:para>Type of the image. It can be either DISK_IMAGE or ISO_IMAGE.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3182,7 +3182,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Name of the image</maml:para>
+          <maml:para>Name of the image.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3194,7 +3194,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -3274,7 +3274,7 @@
       <command:verb>Set</command:verb>
       <command:noun>VM</command:noun>
       <maml:description>
-        <maml:para>Updates VM</maml:para>
+        <maml:para>Updates VM.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -3298,7 +3298,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the VM</maml:para>
+            <maml:para>Description of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3310,7 +3310,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>MemoryMb</maml:name>
           <maml:description>
-            <maml:para>Memory size in Mb</maml:para>
+            <maml:para>Memory size in Mb.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -3322,7 +3322,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the VM</maml:para>
+            <maml:para>Name of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3334,7 +3334,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumCoresPerVcpu</maml:name>
           <maml:description>
-            <maml:para>Number of cores per Vcpu</maml:para>
+            <maml:para>Number of cores per Vcpu.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -3346,7 +3346,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumVcpus</maml:name>
           <maml:description>
-            <maml:para>Number of Vcpu</maml:para>
+            <maml:para>Number of Vcpu.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -3358,7 +3358,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -3370,7 +3370,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Uuid</maml:name>
           <maml:description>
-            <maml:para>UUID of the VM</maml:para>
+            <maml:para>UUID of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3397,7 +3397,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Description</maml:name>
           <maml:description>
-            <maml:para>Description of the VM</maml:para>
+            <maml:para>Description of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3409,7 +3409,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>MemoryMb</maml:name>
           <maml:description>
-            <maml:para>Memory size in Mb</maml:para>
+            <maml:para>Memory size in Mb.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -3421,7 +3421,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>Name</maml:name>
           <maml:description>
-            <maml:para>Name of the VM</maml:para>
+            <maml:para>Name of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3433,7 +3433,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumCoresPerVcpu</maml:name>
           <maml:description>
-            <maml:para>Number of cores per Vcpu</maml:para>
+            <maml:para>Number of cores per Vcpu.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -3445,7 +3445,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>NumVcpus</maml:name>
           <maml:description>
-            <maml:para>Number of Vcpu</maml:para>
+            <maml:para>Number of Vcpu.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
           <dev:type>
@@ -3457,7 +3457,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -3496,7 +3496,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Description</maml:name>
         <maml:description>
-          <maml:para>Description of the VM</maml:para>
+          <maml:para>Description of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3508,7 +3508,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>MemoryMb</maml:name>
         <maml:description>
-          <maml:para>Memory size in Mb</maml:para>
+          <maml:para>Memory size in Mb.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
         <dev:type>
@@ -3520,7 +3520,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Name</maml:name>
         <maml:description>
-          <maml:para>Name of the VM</maml:para>
+          <maml:para>Name of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3532,7 +3532,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>NumCoresPerVcpu</maml:name>
         <maml:description>
-          <maml:para>Number of cores per Vcpu</maml:para>
+          <maml:para>Number of cores per Vcpu.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
         <dev:type>
@@ -3544,7 +3544,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>NumVcpus</maml:name>
         <maml:description>
-          <maml:para>Number of Vcpu</maml:para>
+          <maml:para>Number of Vcpu.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">Int64</command:parameterValue>
         <dev:type>
@@ -3556,7 +3556,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -3568,7 +3568,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>Uuid</maml:name>
         <maml:description>
-          <maml:para>UUID of the VM</maml:para>
+          <maml:para>UUID of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3664,7 +3664,7 @@
       <command:verb>Start</command:verb>
       <command:noun>VM</command:noun>
       <maml:description>
-        <maml:para>Power on the VM</maml:para>
+        <maml:para>Power on the VM.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -3676,7 +3676,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>Uuid</maml:name>
           <maml:description>
-            <maml:para>UUID of the VM</maml:para>
+            <maml:para>UUID of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3688,7 +3688,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -3703,7 +3703,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -3730,7 +3730,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -3742,7 +3742,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
         <maml:name>Uuid</maml:name>
         <maml:description>
-          <maml:para>UUID of the VM</maml:para>
+          <maml:para>UUID of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3829,11 +3829,11 @@
       <command:verb>Stop</command:verb>
       <command:noun>VM</command:noun>
       <maml:description>
-        <maml:para>Power off the VM</maml:para>
+        <maml:para>Power off the VM.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Set the power state off</maml:para>
+      <maml:para>Set the power state off.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -3841,7 +3841,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
           <maml:name>Uuid</maml:name>
           <maml:description>
-            <maml:para>UUID of the VM</maml:para>
+            <maml:para>UUID of the VM.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -3853,7 +3853,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -3868,7 +3868,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -3895,7 +3895,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -3907,7 +3907,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="0" aliases="none">
         <maml:name>Uuid</maml:name>
         <maml:description>
-          <maml:para>UUID of the VM</maml:para>
+          <maml:para>UUID of the VM.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -3987,7 +3987,7 @@
       <command:verb>Wait</command:verb>
       <command:noun>Task</command:noun>
       <maml:description>
-        <maml:para>Waits until all tasks are finished or timeout</maml:para>
+        <maml:para>Waits until all tasks are finished or timeout.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -3999,7 +3999,7 @@
         <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
           <maml:name>TaskIds</maml:name>
           <maml:description>
-            <maml:para>Task UUID</maml:para>
+            <maml:para>Task UUID.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -4011,7 +4011,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -4038,7 +4038,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
           <maml:name>Servers</maml:name>
           <maml:description>
-            <maml:para>Name or IP address of Prism Central</maml:para>
+            <maml:para>Name or IP address of Prism Central.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
           <dev:type>
@@ -4065,7 +4065,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="S">
         <maml:name>Servers</maml:name>
         <maml:description>
-          <maml:para>Name or IP address of Prism Central</maml:para>
+          <maml:para>Name or IP address of Prism Central.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>
@@ -4077,7 +4077,7 @@
       <command:parameter required="true" variableLength="true" globbing="false" pipelineInput="False" position="0" aliases="none">
         <maml:name>TaskIds</maml:name>
         <maml:description>
-          <maml:para>Task UUID</maml:para>
+          <maml:para>Task UUID.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">System.Collections.Generic.HashSet`1[System.String]</command:parameterValue>
         <dev:type>

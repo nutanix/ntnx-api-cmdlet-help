@@ -37,7 +37,7 @@ Get-Metric [-ClusterName] <String> [-Metrics] <String> -IntervalInSecs <Int32>
 ```
 
 ## DESCRIPTION
-Displays a metric of the cluster for given time period. To list all available metrics, try `Get-Help Get-Metric -Parameter Metrics`
+Displays a metric of the cluster for given time period. To list all available metrics, try `Get-Help Get-Metric -Parameter Metrics`.
 
 ## EXAMPLES
 
@@ -53,12 +53,12 @@ Displays the metric controller_num_iops from 600 seconds ago till now with 60 se
 PS C:\>  Get-Help Get-Metric -Parameter Metrics
 ```
 
-Displays all available metrics names
+Displays all available metrics names.
 
 ## PARAMETERS
 
 ### -ClusterName
-Cluster Name
+Cluster Name.
 
 ```yaml
 Type: String
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 ```
 
 ### -ClusterUuid
-Cluster UUID
+Cluster UUID.
 
 ```yaml
 Type: String
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -EndTimeSecsAgo
-End time of the metric
+End time of the metric.
 
 ```yaml
 Type: Int64
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntervalInSecs
-Interval of the metric in range of 1 to 300
+Interval of the metric in range of 1 to 300.
 
 ```yaml
 Type: Int32
@@ -367,7 +367,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 ```
 
 ### -StartTimeSecsAgo
-Start time of the metric
+Start time of the metric.
 
 ```yaml
 Type: Int64

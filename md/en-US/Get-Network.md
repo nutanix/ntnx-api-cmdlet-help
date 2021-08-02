@@ -32,7 +32,7 @@ Displays all available networks from connected Prism Central.
 ## PARAMETERS
 
 ### -Count
-Number of subnet to display
+Number of subnet to display.
 
 ```yaml
 Type: Int32
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -Page
-Number of page to display
+Number of page to display.
 
 ```yaml
 Type: Int32
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]

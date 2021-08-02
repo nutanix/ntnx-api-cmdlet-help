@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-Image
 
 ## SYNOPSIS
-Displays the image information of specified UUID.
+Accepts the UUID of an image and displays information about the image.
 
 ## SYNTAX
 
@@ -27,19 +27,19 @@ If -ImageId is given, displays the information of the specific image, otherwise,
 PS C:\> Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425
 ```
 
-Displays the image information of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425
+Displays the image information of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425.
 
 ### Example 2
 ```powershell
 PS C:\> Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425 | ConvertTo-Json -Depth 3
 ```
 
-Displays more details about the image in JSON format
+Displays more details about the image in JSON format.
 
 ## PARAMETERS
 
 ### -ImageId
-Image UUID
+Image UUID.
 
 ```yaml
 Type: String
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeVmDiskId
-Displays vm_disk_id which can be used for cloning VM. For example, you can create VMDiskAddress object then assign vm_disk_id to vmdisk_uuid property of VMDiskAddress
+Displays vm_disk_id which can be used for cloning VM. For example, you can create VMDiskAddress object then assign vm_disk_id to vmdisk_uuid property of VMDiskAddress.
 
 ```yaml
 Type: SwitchParameter
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -Servers
-Name or IP address of Prism Central
+Name or IP address of Prism Central.
 
 ```yaml
 Type: System.Collections.Generic.HashSet`1[System.String]
