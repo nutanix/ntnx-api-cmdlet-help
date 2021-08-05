@@ -31,7 +31,7 @@ Waits for one or more of tasks to finish. If Timeoutseconds is not given, waits 
 
 ### Example 1
 ```powershell
-PS C:\> Get-VM -Uuid $vmUuid | Stop-VM | Wait-Task
+> Get-VM -Uuid $vmUuid | Stop-VM | Wait-Task
 ```
 
 Stops the VM and waits for the task to be completed. If the -Timeoutseconds is not given, it waits for 30 seconds. If the task is still not completed, it displays an error with the TaskID and the Wait-Task command. Run the same command to continue for another 30 seconds or for the timeout given by -Timeoutseconds.

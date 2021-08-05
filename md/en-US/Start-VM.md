@@ -29,14 +29,14 @@ Sets power state ON for a given VM.
 
 ### Example 1
 ```powershell
-PS C:\> Start-VM $vmUuid | Wait-Task
+> Start-VM $vmUuid | Wait-Task
 ```
 
 Starts the VM then wait for the task to be completed.
 
 ### Example 2
 ```powershell
-PS C:\> Get-VM -Uuid $vmUuid | Start-VM | Wait-Task
+> Get-VM -Uuid $vmUuid | Start-VM | Wait-Task
 ```
 
 Starts the VM returned from Get-VM command then wait for the task completed.

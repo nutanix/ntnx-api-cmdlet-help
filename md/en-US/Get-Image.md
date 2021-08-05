@@ -24,14 +24,14 @@ If -ImageId is given, displays the information of the specific image, otherwise,
 
 ### Example 1
 ```powershell
-PS C:\> Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425
+> Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425
 ```
 
 Displays the image information of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425.
 
 ### Example 2
 ```powershell
-PS C:\> Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425 | ConvertTo-Json -Depth 3
+> Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425 | ConvertTo-Json -Depth 3
 ```
 
 Displays more details about the image in JSON format.

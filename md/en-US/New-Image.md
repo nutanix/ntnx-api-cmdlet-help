@@ -35,7 +35,7 @@ Creates a new image.
 
 ### Example 1
 ```powershell
-PS C:\> New-Image -Name testimage1 -ClusterName mycluster -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2
+> New-Image -Name testimage1 -ClusterName mycluster -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2
 ```
 
 Creates a new image in cluster `mycluster`
@@ -43,7 +43,7 @@ Creates a new image in cluster `mycluster`
 
 ### Example 2
 ```powershell
-PS C:\> New-Image -Servers 10.46.28.27 -Name testimage1 -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2
+> New-Image -Servers 10.46.28.27 -Name testimage1 -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2
 ```
 
 Creates a new image on Prism Central 10.46.28.27. Prism Central will automatically select the available cluster and creates the image on it.
