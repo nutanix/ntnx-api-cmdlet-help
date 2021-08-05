@@ -10,7 +10,7 @@
       </maml:description>
     </command:details>
     <maml:description>
-      <maml:para>Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with a different IP or Hostname. The session is valid for 15 minutes from the last access to Prism Central.</maml:para>
+      <maml:para>Connect to Prism Central IP or Hostname. To connect multiple Prism Central instances, repeat this command with a different IP or Hostname. The session is valid for 15 minutes from the last access to Prism Central.</maml:para>
     </maml:description>
     <command:syntax>
       <command:syntaxItem>
@@ -281,7 +281,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts</dev:code>
+        <dev:code>&gt; Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts</dev:code>
         <dev:remarks>
           <maml:para>Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignores validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. </maml:para>
           <maml:para></maml:para>
@@ -291,7 +291,7 @@
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -Credential $Cred -AcceptInvalidSSLCerts</dev:code>
+        <dev:code>&gt; Connect-PrismCentral -Server 10.36.240.21 -Credential $Cred -AcceptInvalidSSLCerts</dev:code>
         <dev:remarks>
           <maml:para>Connects to Prism Central IP 10.36.240.21 with credentials. $Cred can be created as following.</maml:para>
           <maml:para>$Cred = New-Object System.Management.Automation.PSCredential("admin", $Secure) and the $Secure can be created as same way as Example 1.</maml:para>
@@ -299,7 +299,7 @@
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Connect-PrismCentral -Server 10.36.240.21 -UserName admin -AcceptInvalidSSLCerts</dev:code>
+        <dev:code>&gt; Connect-PrismCentral -Server 10.36.240.21 -UserName admin -AcceptInvalidSSLCerts</dev:code>
         <dev:remarks>
           <maml:para>Connects to Prism Central IP 10.36.240.21 with user name `admin`. This will prompt for a password, so the user can type the password to the console.</maml:para>
         </dev:remarks>
@@ -378,14 +378,14 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Disconnect-PrismCentral -Servers 10.46.28.31</dev:code>
+        <dev:code>&gt; Disconnect-PrismCentral -Servers 10.46.28.31</dev:code>
         <dev:remarks>
           <maml:para>Disconnects from Prism Central host 10.46.28.31</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Disconnect-PrismCentral -Servers *</dev:code>
+        <dev:code>&gt; Disconnect-PrismCentral -Servers *</dev:code>
         <dev:remarks>
           <maml:para>Disconnects from all Prism Central.</maml:para>
         </dev:remarks>
@@ -464,7 +464,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; $boot = New-NutanixObject BootConfig</dev:code>
+        <dev:code>&gt; $boot = New-NutanixObject BootConfig</dev:code>
         <dev:remarks>
           <maml:para>Creates a BootConfig type of object to be used for creating a VM.</maml:para>
         </dev:remarks>

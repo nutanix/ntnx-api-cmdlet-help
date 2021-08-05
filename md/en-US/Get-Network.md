@@ -24,7 +24,7 @@ Displays all networks available for the connected Prism Central. This is typical
 
 ### Example 1
 ```powershell
-PS C:\> Get-Network
+> Get-Network
 ```
 
 Displays all available networks from connected Prism Central.

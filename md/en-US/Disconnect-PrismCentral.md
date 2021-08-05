@@ -23,14 +23,14 @@ Disconnect from one or all of Prism Central hosts. use '*' as -Server parameter 
 
 ### Example 1
 ```powershell
-PS C:\> Disconnect-PrismCentral -Servers 10.46.28.31
+> Disconnect-PrismCentral -Servers 10.46.28.31
 ```
 
 Disconnects from Prism Central host 10.46.28.31
 
 ### Example 2
 ```powershell
-PS C:\> Disconnect-PrismCentral -Servers *
+> Disconnect-PrismCentral -Servers *
 ```
 
 Disconnects from all Prism Central.

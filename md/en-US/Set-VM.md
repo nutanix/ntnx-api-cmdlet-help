@@ -33,7 +33,7 @@ Updates the VM attributes.
 
 ### Example 1
 ```powershell
-PS C:\> Get-VM -Uuid $vmUuid | Set-VM -Name NewName | Wait-Task
+> Get-VM -Uuid $vmUuid | Set-VM -Name NewName | Wait-Task
 ```
 
 Updates the VM name to NewName with UUID as $vmUuid and waits for the task to be completed.

@@ -33,7 +33,7 @@ Creates a New VM.
 
 ### Example 1
 ```powershell
-PS C:\> New-VM -Name testvm1 -ClusterName mycluster -NumVcpus 1 -MemoryMb 500 | Wait-Task
+> New-VM -Name testvm1 -ClusterName mycluster -NumVcpus 1 -MemoryMb 500 | Wait-Task
 ```
 
 ## PARAMETERS
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -GuestOS
-The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS if ignored if the cluster is AHV.
+The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS is ignored if the cluster is AHV.
 
 ```yaml
 Type: String

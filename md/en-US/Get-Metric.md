@@ -43,14 +43,14 @@ Displays a metric of the cluster for given time period. To list all available me
 
 ### Example 1
 ```powershell
-PS C:\>  Get-Metric -Server 10.46.28.31 -ClusterName mycluster -Metrics controller_num_iops -StartTimeSecsAgo 600 -EndTimeSecsAgo 0 -IntervalInSecs 60
+>  Get-Metric -Server 10.46.28.31 -ClusterName mycluster -Metrics controller_num_iops -StartTimeSecsAgo 600 -EndTimeSecsAgo 0 -IntervalInSecs 60
 ```
 
 Displays the metric controller_num_iops from 600 seconds ago till now with 60 seconds of the interval from the cluster. To get cluster name use `Get-Cluster` command.
 
 ### Example 2
 ```powershell
-PS C:\>  Get-Help Get-Metric -Parameter Metrics
+>  Get-Help Get-Metric -Parameter Metrics
 ```
 
 Displays all available metrics names.

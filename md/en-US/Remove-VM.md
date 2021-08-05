@@ -24,14 +24,14 @@ Removes a VM. If `-Server` is not given, it will look for all connected Prism Ce
 
 ### Example 1
 ```powershell
-PS C:\> Remove-VM  5b25f68b-fe73-4cdc-88bf-a5485dff1627
+> Remove-VM  5b25f68b-fe73-4cdc-88bf-a5485dff1627
 ```
 
 Find the UUID from connected Prism Central and removes it.
 
 ### Example 2
 ```powershell
-PS C:\> Remove-VM -Server 10.46.28.27 5b25f68b-fe73-4cdc-88bf-a5485dff1627
+> Remove-VM -Server 10.46.28.27 5b25f68b-fe73-4cdc-88bf-a5485dff1627
 ```
 
 Find the UUID from Prism Central 10.46.28.27 then removes it. It will remove only if the VM is in the Prism Central 10.46.28.27.

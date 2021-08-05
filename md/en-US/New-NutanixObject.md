@@ -23,7 +23,7 @@ Creates a Nutanix Object. This is used to create an object used as parameters fo
 
 ### Example 1
 ```powershell
-PS C:\> $boot = New-NutanixObject BootConfig
+> $boot = New-NutanixObject BootConfig
 ```
 
 Creates a BootConfig type of object to be used for creating a VM.

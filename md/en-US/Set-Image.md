@@ -24,7 +24,7 @@ Updates the attributes of given image.
 
 ### Example 1
 ```powershell
-PS C:\> Get-Image -ImageId $imageUUID | Set-Image -Name NewName | Wait-Task
+> Get-Image -ImageId $imageUUID | Set-Image -Name NewName | Wait-Task
 ```
 
 Changes the name of $imageUUID to NewName then wait for the task to be completed. The output of Get-Image will contain the metadata and spec for the image, so the Set-Image will use them for updating the image.
