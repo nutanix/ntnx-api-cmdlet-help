@@ -29,7 +29,7 @@ Set the power state off.
 
 ### Example 1
 ```powershell
-PS C:\> Get-VM -PowerState ON | Stop-VM | Wait-Task
+> Get-VM -PowerState ON | Stop-VM | Wait-Task
 ```
 
 Searches for the VM that is powered ON then stops those VMs then waits for the task completed.

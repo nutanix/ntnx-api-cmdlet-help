@@ -49,49 +49,49 @@ Displays a list of VM for the connected Prism Central.
 
 ### Example 1
 ```powershell
-PS C:\> Get-VM
+> Get-VM
 ```
 
 Displays all VMs for the connected Prism Central.
 
 ### Example 2
 ```powershell
-PS C:\> Get-VM testvm
+> Get-VM testvm
 ```
 
 Displays all VMs with VM name `testvm`.
 
 ### Example 3
 ```powershell
-PS C:\> Get-VM testvm -Contains
+> Get-VM testvm -Contains
 ```
 
 Displays all VMs that contain the name as `testvm`.
 
 ### Example 4
 ```powershell
-PS C:\> Get-VM testvm -StartsWith
+> Get-VM testvm -StartsWith
 ```
 
 Displays all VMs with names starting with `testvm`.
 
 ### Example 5
 ```powershell
-PS C:\> Get-VM testvm -EndsWith
+> Get-VM testvm -EndsWith
 ```
 
 Displays all VMs with names ending with `testvm`.
 
 ### Example 6
 ```powershell
-PS C:\> Get-VM -PowerState ON
+> Get-VM -PowerState ON
 ```
 
 Displays all VMs with power state is ON.
 
 ### Example 7
 ```powershell
-PS C:\> Get-VM -Count 10 -Page 2
+> Get-VM -Count 10 -Page 2
 ```
 
 Displays 10 VMs from the second page.

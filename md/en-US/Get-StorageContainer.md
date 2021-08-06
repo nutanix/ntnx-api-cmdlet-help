@@ -24,7 +24,7 @@ Displays storage containers available for the connected Prism Central. Typically
 
 ### Example 1
 ```powershell
-PS C:\> Get-StorageContainer
+> Get-StorageContainer
 ```
 
 Displays a list of available storage containers for the connected Prism Central.

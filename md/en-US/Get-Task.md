@@ -26,14 +26,14 @@ Default task count value is 20
 
 ### Example 1
 ```powershell
-PS C:\> Get-Task
+> Get-Task
 ```
 
 Displays the last 20 tasks that are running for each connected Prism Central. If there are no tasks currently running, nothing will be displayed.
 
 ### Example 2
 ```powershell
-PS C:\> Get-Task -IncludeCompleted
+> Get-Task -IncludeCompleted
 ```
 
 Displays the last 20 tasks that are completed. If `-Count` is given, it displays the number of tasks specified by -Count.

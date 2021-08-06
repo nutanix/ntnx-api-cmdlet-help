@@ -6,7 +6,7 @@
       <command:verb>Get</command:verb>
       <command:noun>Cluster</command:noun>
       <maml:description>
-        <maml:para>Displays information about the clusters that are registered with Prism Central. If the clusters are registered with other Prism Centrak instances, the cmdlet also displays the clusters that are registered with those Prism Central instances.</maml:para>
+        <maml:para>Displays information about the clusters that are registered with Prism Central. If the clusters are registered with other Prism Central instances, the cmdlet also displays the clusters that are registered with those Prism Central instances.</maml:para>
       </maml:description>
     </command:details>
     <maml:description>
@@ -134,21 +134,21 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-Cluster</dev:code>
+        <dev:code>&gt; Get-Cluster</dev:code>
         <dev:remarks>
           <maml:para>Lists the clusters registered with the Prism Central instance.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>Get-Cluster mycluster</dev:code>
+        <dev:code>&gt; Get-Cluster mycluster</dev:code>
         <dev:remarks>
           <maml:para>Displays the cluster information about the cluster named mycluster.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>Get-Cluster 0005bade-af08-c5ec-0000-000000019dda</dev:code>
+        <dev:code>&gt; Get-Cluster 0005bade-af08-c5ec-0000-000000019dda</dev:code>
         <dev:remarks>
           <maml:para>Displays information about the cluster with UUID 0005bade-af08-c5ec-0000-000000019dda. The first parameter can be a cluster name or UUID.</maml:para>
         </dev:remarks>
@@ -282,14 +282,14 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425</dev:code>
+        <dev:code>&gt; Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425</dev:code>
         <dev:remarks>
           <maml:para>Displays the image information of UUID 452f17c2-c1fb-46a8-bbec-2eb914b9b425.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425 | ConvertTo-Json -Depth 3</dev:code>
+        <dev:code>&gt; Get-Image  -ImageId 452f17c2-c1fb-46a8-bbec-2eb914b9b425 | ConvertTo-Json -Depth 3</dev:code>
         <dev:remarks>
           <maml:para>Displays more details about the image in JSON format.</maml:para>
         </dev:remarks>
@@ -1046,14 +1046,14 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt;  Get-Metric -Server 10.46.28.31 -ClusterName mycluster -Metrics controller_num_iops -StartTimeSecsAgo 600 -EndTimeSecsAgo 0 -IntervalInSecs 60</dev:code>
+        <dev:code>&gt;  Get-Metric -Server 10.46.28.31 -ClusterName mycluster -Metrics controller_num_iops -StartTimeSecsAgo 600 -EndTimeSecsAgo 0 -IntervalInSecs 60</dev:code>
         <dev:remarks>
           <maml:para>Displays the metric controller_num_iops from 600 seconds ago till now with 60 seconds of the interval from the cluster. To get cluster name use `Get-Cluster` command.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt;  Get-Help Get-Metric -Parameter Metrics</dev:code>
+        <dev:code>&gt;  Get-Help Get-Metric -Parameter Metrics</dev:code>
         <dev:remarks>
           <maml:para>Displays all available metrics names.</maml:para>
         </dev:remarks>
@@ -1180,7 +1180,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-Network</dev:code>
+        <dev:code>&gt; Get-Network</dev:code>
         <dev:remarks>
           <maml:para>Displays all available networks from connected Prism Central.</maml:para>
         </dev:remarks>
@@ -1307,7 +1307,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-StorageContainer</dev:code>
+        <dev:code>&gt; Get-StorageContainer</dev:code>
         <dev:remarks>
           <maml:para>Displays a list of available storage containers for the connected Prism Central.</maml:para>
         </dev:remarks>
@@ -1481,14 +1481,14 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-Task</dev:code>
+        <dev:code>&gt; Get-Task</dev:code>
         <dev:remarks>
           <maml:para>Displays the last 20 tasks that are running for each connected Prism Central. If there are no tasks currently running, nothing will be displayed.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-Task -IncludeCompleted</dev:code>
+        <dev:code>&gt; Get-Task -IncludeCompleted</dev:code>
         <dev:remarks>
           <maml:para>Displays the last 20 tasks that are completed. If `-Count` is given, it displays the number of tasks specified by -Count.</maml:para>
         </dev:remarks>
@@ -2004,49 +2004,49 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM</dev:code>
+        <dev:code>&gt; Get-VM</dev:code>
         <dev:remarks>
           <maml:para>Displays all VMs for the connected Prism Central.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM testvm</dev:code>
+        <dev:code>&gt; Get-VM testvm</dev:code>
         <dev:remarks>
           <maml:para>Displays all VMs with VM name `testvm`.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 3 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM testvm -Contains</dev:code>
+        <dev:code>&gt; Get-VM testvm -Contains</dev:code>
         <dev:remarks>
           <maml:para>Displays all VMs that contain the name as `testvm`.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 4 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM testvm -StartsWith</dev:code>
+        <dev:code>&gt; Get-VM testvm -StartsWith</dev:code>
         <dev:remarks>
           <maml:para>Displays all VMs with names starting with `testvm`.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 5 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM testvm -EndsWith</dev:code>
+        <dev:code>&gt; Get-VM testvm -EndsWith</dev:code>
         <dev:remarks>
           <maml:para>Displays all VMs with names ending with `testvm`.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 6 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM -PowerState ON</dev:code>
+        <dev:code>&gt; Get-VM -PowerState ON</dev:code>
         <dev:remarks>
           <maml:para>Displays all VMs with power state is ON.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 7 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM -Count 10 -Page 2</dev:code>
+        <dev:code>&gt; Get-VM -Count 10 -Page 2</dev:code>
         <dev:remarks>
           <maml:para>Displays 10 VMs from the second page.</maml:para>
         </dev:remarks>
@@ -2343,14 +2343,14 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-Image -Name testimage1 -ClusterName mycluster -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2</dev:code>
+        <dev:code>&gt; New-Image -Name testimage1 -ClusterName mycluster -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2</dev:code>
         <dev:remarks>
           <maml:para>Creates a new image in cluster `mycluster` -SourceUri is the source of the image from where the image should be picked to create New-Image.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-Image -Servers 10.46.28.27 -Name testimage1 -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2</dev:code>
+        <dev:code>&gt; New-Image -Servers 10.46.28.27 -Name testimage1 -ImageType DISK_IMAGE -SourceUri http://image.upload.host.com/GoldImages/centoslight_run_fioboot.qcow2</dev:code>
         <dev:remarks>
           <maml:para>Creates a new image on Prism Central 10.46.28.27. Prism Central will automatically select the available cluster and creates the image on it.</maml:para>
         </dev:remarks>
@@ -2412,7 +2412,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>GuestOS</maml:name>
           <maml:description>
-            <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS if ignored if the cluster is AHV.</maml:para>
+            <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS is ignored if the cluster is AHV.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2535,7 +2535,7 @@
         <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
           <maml:name>GuestOS</maml:name>
           <maml:description>
-            <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS if ignored if the cluster is AHV.</maml:para>
+            <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS is ignored if the cluster is AHV.</maml:para>
           </maml:description>
           <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
           <dev:type>
@@ -2670,7 +2670,7 @@
       <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none">
         <maml:name>GuestOS</maml:name>
         <maml:description>
-          <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS if ignored if the cluster is AHV.</maml:para>
+          <maml:para>The GuestOS affects the supported devices and number of virtual CPUs available for the VM. GuestOS is ignored if the cluster is AHV.</maml:para>
         </maml:description>
         <command:parameterValue required="true" variableLength="false">String</command:parameterValue>
         <dev:type>
@@ -2812,7 +2812,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; New-VM -Name testvm1 -ClusterName mycluster -NumVcpus 1 -MemoryMb 500 | Wait-Task</dev:code>
+        <dev:code>&gt; New-VM -Name testvm1 -ClusterName mycluster -NumVcpus 1 -MemoryMb 500 | Wait-Task</dev:code>
         <dev:remarks>
           <maml:para></maml:para>
         </dev:remarks>
@@ -2923,7 +2923,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-Image -ImageId 25a2a7dc-cf26-4cb7-8bfb-f103fdfcd2d1 | Wait-Task</dev:code>
+        <dev:code>&gt; Remove-Image -ImageId 25a2a7dc-cf26-4cb7-8bfb-f103fdfcd2d1 | Wait-Task</dev:code>
         <dev:remarks>
           <maml:para>Removes the image with UUID 25a2a7dc-cf26-4cb7-8bfb-f103fdfcd2d1 and wait for the task to be completed.</maml:para>
         </dev:remarks>
@@ -3034,14 +3034,14 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-VM  5b25f68b-fe73-4cdc-88bf-a5485dff1627</dev:code>
+        <dev:code>&gt; Remove-VM  5b25f68b-fe73-4cdc-88bf-a5485dff1627</dev:code>
         <dev:remarks>
           <maml:para>Find the UUID from connected Prism Central and removes it.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Remove-VM -Server 10.46.28.27 5b25f68b-fe73-4cdc-88bf-a5485dff1627</dev:code>
+        <dev:code>&gt; Remove-VM -Server 10.46.28.27 5b25f68b-fe73-4cdc-88bf-a5485dff1627</dev:code>
         <dev:remarks>
           <maml:para>Find the UUID from Prism Central 10.46.28.27 then removes it. It will remove only if the VM is in the Prism Central 10.46.28.27.</maml:para>
         </dev:remarks>
@@ -3260,7 +3260,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-Image -ImageId $imageUUID | Set-Image -Name NewName | Wait-Task</dev:code>
+        <dev:code>&gt; Get-Image -ImageId $imageUUID | Set-Image -Name NewName | Wait-Task</dev:code>
         <dev:remarks>
           <maml:para>Changes the name of $imageUUID to NewName then wait for the task to be completed. The output of Get-Image will contain the metadata and spec for the image, so the Set-Image will use them for updating the image.</maml:para>
         </dev:remarks>
@@ -3650,7 +3650,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM -Uuid $vmUuid | Set-VM -Name NewName | Wait-Task</dev:code>
+        <dev:code>&gt; Get-VM -Uuid $vmUuid | Set-VM -Name NewName | Wait-Task</dev:code>
         <dev:remarks>
           <maml:para>Updates the VM name to NewName with UUID as $vmUuid and waits for the task to be completed.</maml:para>
         </dev:remarks>
@@ -3808,14 +3808,14 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Start-VM $vmUuid | Wait-Task</dev:code>
+        <dev:code>&gt; Start-VM $vmUuid | Wait-Task</dev:code>
         <dev:remarks>
           <maml:para>Starts the VM then wait for the task to be completed.</maml:para>
         </dev:remarks>
       </command:example>
       <command:example>
         <maml:title>-------------------------- Example 2 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM -Uuid $vmUuid | Start-VM | Wait-Task</dev:code>
+        <dev:code>&gt; Get-VM -Uuid $vmUuid | Start-VM | Wait-Task</dev:code>
         <dev:remarks>
           <maml:para>Starts the VM returned from Get-VM command then wait for the task completed.</maml:para>
         </dev:remarks>
@@ -3973,7 +3973,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM -PowerState ON | Stop-VM | Wait-Task</dev:code>
+        <dev:code>&gt; Get-VM -PowerState ON | Stop-VM | Wait-Task</dev:code>
         <dev:remarks>
           <maml:para>Searches for the VM that is powered ON then stops those VMs then waits for the task completed.</maml:para>
         </dev:remarks>
@@ -4155,7 +4155,7 @@
     <command:examples>
       <command:example>
         <maml:title>-------------------------- Example 1 --------------------------</maml:title>
-        <dev:code>PS C:\&gt; Get-VM -Uuid $vmUuid | Stop-VM | Wait-Task</dev:code>
+        <dev:code>&gt; Get-VM -Uuid $vmUuid | Stop-VM | Wait-Task</dev:code>
         <dev:remarks>
           <maml:para>Stops the VM and waits for the task to be completed. If the -Timeoutseconds is not given, it waits for 30 seconds. If the task is still not completed, it displays an error with the TaskID and the Wait-Task command. Run the same command to continue for another 30 seconds or for the timeout given by -Timeoutseconds.</maml:para>
         </dev:remarks>

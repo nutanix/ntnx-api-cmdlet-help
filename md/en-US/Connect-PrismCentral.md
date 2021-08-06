@@ -25,13 +25,13 @@ Connect-PrismCentral [-Server] <String> -UserName <String> -Password <SecureStri
 ```
 
 ## DESCRIPTION
-Connect to Prism Central IP or Hostname. To connect multiple Prism Central, repeat this command with a different IP or Hostname. The session is valid for 15 minutes from the last access to Prism Central.
+Connect to Prism Central IP or Hostname. To connect multiple Prism Central instances, repeat this command with a different IP or Hostname. The session is valid for 15 minutes from the last access to Prism Central.
 
 ## EXAMPLES
 
 ### Example 1
 ```powershell
-PS C:\> Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts
+> Connect-PrismCentral -Server 10.36.240.21 -Username admin -Password $Secure -AcceptInvalidSSLCerts
 ```
 
 Connects to Prism Central IP 10.36.240.21 as username admin and the password stored in $Secure as SecureString type and ignores validation of the certificate. The $Secure value can be created with ConvertTo-SecureString like the following. Replace 'adminpassword' with your real admin password string. -AcceptInvalidSSLCerts will skip the validation of certs. 
@@ -43,7 +43,7 @@ Secure command should be executed before Connect-PrismCentral command. This comm
 
 ### Example 2
 ```powershell
-PS C:\> Connect-PrismCentral -Server 10.36.240.21 -Credential $Cred -AcceptInvalidSSLCerts
+> Connect-PrismCentral -Server 10.36.240.21 -Credential $Cred -AcceptInvalidSSLCerts
 ```
 
 Connects to Prism Central IP 10.36.240.21 with credentials. $Cred can be created as following.
@@ -53,7 +53,7 @@ and the $Secure can be created as same way as Example 1.
 
 ### Example 3
 ```powershell
-PS C:\> Connect-PrismCentral -Server 10.36.240.21 -UserName admin -AcceptInvalidSSLCerts
+> Connect-PrismCentral -Server 10.36.240.21 -UserName admin -AcceptInvalidSSLCerts
 ```
 
  
